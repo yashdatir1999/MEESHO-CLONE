@@ -36,9 +36,29 @@
                     <%= product.soldby%>
                     <button>View Shop</button>
                 </div>
+                <div class="soldby-details">
+                    <h2>
+                        <span> <%= product.rating%><i class="ri-star-s-fill"></i></span><br>
+                        <%= product.reviews%>
+                    </h2>
+                    <h2>
+                        <span>944</span><br>
+                        Followers
+                    </h2>
+                    <h2>
+                        <span><%= product.availablequantity%></span><br>
+                        Products
+                    </h2>
+                </div>
+                <div class="check">
+                    <h2 >Check Delivery Date</h2>
+                    <input type="text" placeholder="Enter Delivery Pincode">
+                    <h3> <i class="ri-roadster-fill"></i> Enter Pincode for Estimated Delivery Date</h3>
+                    <h3> <i class="ri-briefcase-2-line"></i> Dispatch in 2 day</h3>
+                </div>
             </div>
         </div>
 
 
-
+        <script src="/javascripts/productdetails.js"></script>
         <%- include("code/footer")%>
