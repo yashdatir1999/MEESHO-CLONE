@@ -17,16 +17,32 @@ const productlist = [
 /* GET home page. */
 router.get('/', async function(req, res, next) {
 
-  const product = await DATABASE.find()
-
-  res.render('index', { product });
+  try {
+    const product = await DATABASE.find()
+    res.render('index', { product });
+      
+  } catch (error) {
+    res.send(error)    
+  }
 });
 
 //Women Ethnic  ///============== START
 
 //Women Ethnic (SAREES) ============== START
-router.get('/WomenEthnic/AllSarees', function(req, res, next) {
-  res.render('allsarees', { title: 'Express' });
+router.get('/WomenEthnic/AllSarees', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "allSarees"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('allsarees', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
 router.get('/WomenEthnic/SilkSarees', function(req, res, next) {

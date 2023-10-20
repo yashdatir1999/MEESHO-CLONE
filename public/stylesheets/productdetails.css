@@ -14,6 +14,7 @@
 .productdetails-left-images{
     height: 80vh;
     width: 100%;
+    margin-bottom: 5vmax;
     /* background-color: aqua; */
     padding-right: 3vmax;
     display: flex;
@@ -39,7 +40,7 @@
     width: 100%;
 }
 .productdetails-left-bigimages{
-    height: 70vh;
+    height: 80vh;
     width: 27vw;
     overflow: hidden;
     /* background-color: orange; */
