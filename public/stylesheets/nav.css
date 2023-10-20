@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.filler{
+    height: 20vh;
+    width: 100%;
+    background-color: green;
+}
+.nav{
+    height: 21vh;
+    width: 100%;
+    /* background-color: pink; */
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    user-select: none;
+}
+.topnav{
+    height: 12vh;
+    width: 100%;
+    padding: 2vmax ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: lightblue; */
+    box-shadow: 0 0 0.3vmax rgb(128, 121, 143);
+}
+.topnav >h2 >a{
+    text-decoration: none;
+    user-select: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3vmax;
+    font-weight: 500;
+    color: rgb(87,13,72);
+}
+.topnav >h2:active{
+    scale: 0.9;
+}
+.topnav >input{
+    height: 8vh;
+    width: 29vw;
+    outline: none;
+    border-radius: 0.3vmax;
+    border: 2px solid rgba(146, 139, 163, 0.846);
+    padding-left: 3.5vmax;
+    margin-right: 1.5vmax;
+}
+.topnav >input::placeholder{
+    color: rgb(146,139,163);
+    font-size: 1.1vmax;
+}
+.topnav >i{
+    position: absolute;
+    left: 15.2vmax;
+    color: rgb(146,139,163);
+    font-size: 2vmax;
+    /* background-color: aqua; */
+}
+.app{
+    display: flex;
+    align-items: center;
+    /* background-color: palegreen; */
+    gap: 0.5vmax;
+}
+.app >i{
+    font-size: 2vmax;
+    color: rgb(100, 94, 113);
+
+}
+.app >h3{
+    font-size: 1.2vmax;
+    color: rgb(39, 36, 45);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+}
+.topnav >h3 >a{
+    color: rgb(39, 36, 45);
+    text-decoration: none;
+}
+.DownloadApp{
+    top: 57%;
+    left: 46%;
+    position: absolute;
+    height: 30vh;
+    z-index: 10;
+    width: 15vw;
+    box-shadow: 0 0 0.2vmax rgba(0, 0, 0, 0.651);
+    background-color: white;
+    display: none;
+    
+}
+.DownloadApp >h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6vmax;
+    padding-top: 2vh;
+    padding-left: 1.5vmax;
+}
+.DownloadApp >img{
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.profile-login{
+    top: 59%;
+    right: 2%;
+    position: absolute;
+    height: 30vh;
+    z-index: 10;
+    width: 18vw;
+    border-radius: 0.5vmax;
+    /* box-shadow: 0 0 0.2vmax rgba(51, 50, 50, 0.651); */
+    background-color: white;
+    display: none;
+    padding: 1vmax;
+}
+.profile-login a{
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.profile-login >h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+    margin-bottom: 0.8vmax;
+    color: rgb(36, 35, 35);
+}
+.profile-login >hr{
+    height: 1px;
+    margin: 1.5vmax 0;
+    border: 0.1px solid rgb(109, 98, 98);
+}
+.profile-login >h6{
+    font-family: sans-serif;
+    font-size: 0.8vmax;
+    margin-bottom: 2vmax;
+    font-weight: 100;
+    color: rgb(32, 31, 31);
+}
+.profile-login >.signup{
+    background-color: rgb(146, 25, 126);
+    margin-top: 2vmax;
+    padding: 1vmax 5.7vmax;
+    color: white;
+}
+.order{
+    /* background-color: rgb(168, 160, 175); */
+    padding: 1vmax 4.8vmax 1vmax 1vmax;
+    font-size: 1.5vmax;
+}
+.order >i{
+    font-weight: 100;
+    font-size: 1.3vmax;
+}
+.order >span{
+    color: rgb(31, 29, 29);
+    font-weight: 600;
+    margin-left: 0.8vmax;
+}
+.topnav >hr{
+    height: 6vh;
+    border: 0.1vmax solid rgb(146,139,163);
+}
+.topnav >h3{
+    font-size: 1.2vmax;
+    color: rgb(39, 36, 45);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profile{
+    padding: 1vmax;
+    /* background-color: palegreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile >i{
+    font-size: 1.5vmax;
+    color: rgb(39, 36, 45);
+    margin-bottom: -0.1vmax;
+}
+.profile >h3{
+    font-size: 1.2vmax;
+    color: rgb(39, 36, 45);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cart{
+    padding: 1vmax;
+    /* background-color: palegreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart >i{
+    color: rgb(39, 36, 45);
+    font-size: 1.5vmax;
+    margin-bottom: -0.1vmax;
+}
+.cart >h3{
+    font-size: 1.2vmax;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(39, 36, 45);
+
+}
+
+
+.bottom-nav{
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.1vmax solid  rgb(128, 121, 143) ;
+    padding: 0 2vmax;
+
+}
+.bottom-nav h3{
+    text-decoration: none;
+    font-size: 1.1vmax;
+    color: rgb(39, 36, 45);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Women-Ethnic ,.Women-Western ,.Men ,.Kids ,.Home-Kitchen ,.Beauty-Health ,.Jewellery-Accessories ,.Bags-Footwere ,.Electronics{
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.25vmax solid transparent;
+}
+
+.Women-Ethnic-details , .Women-Western-details ,.Men-details ,.Kids-details ,.Home-Kitchen-details ,.Beauty-Health-details ,.Jewellery-Accessories-details ,.Bags-Footwere-details ,.Electronics-details{
+    background-color: white;
+    width: 98%;
+    left: 1%;
+    top: 21vh;
+    position: absolute;
+    border-left: 0.2vmax solid rgba(128, 128, 128, 0.464);
+    border-bottom: 0.2vmax solid rgba(128, 128, 128, 0.464);
+    border-right: 0.2vmax solid rgba(128, 128, 128, 0.464);
+    /* background-color: pink; */
+    display: flex;
+    gap: 5vmax;
+    padding: 1vmax;
+    display: none;
+}
+.Women-Ethnic-details >ul ,.Women-Western-details >ul ,.Men-details >ul ,.Kids-details >ul ,.Home-Kitchen-details >ul ,.Beauty-Health-details >ul ,.Jewellery-Accessories-details >ul ,.Bags-Footwere-details >ul ,.Electronics-details >ul{
+    list-style: none;
+}
+.Women-Ethnic-details >ul >li ,.Women-Western-details >ul >li ,.Men-details >ul >li ,.Kids-details >ul >li ,.Home-Kitchen-details >ul >li ,.Beauty-Health-details >ul >li ,.Jewellery-Accessories-details >ul >li ,.Bags-Footwere-details >ul >li ,.Electronics-details >ul >li{
+    margin-bottom: 1vmax;
+}
+.Women-Ethnic-details >ul >li >a ,.Women-Western-details >ul >li >a ,.Men-details >ul >li >a ,.Kids-details >ul >li >a ,.Home-Kitchen-details >ul >li >a ,.Beauty-Health-details >ul >li >a ,.Jewellery-Accessories-details >ul >li >a ,.Bags-Footwere-details >ul >li >a ,.Electronics-details >ul >li >a{
+    text-decoration: none;
+    color: rgb(68, 64, 77);
+    font-size: 1.1vmax;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-head{
+    color: rgb(159,32,137);
+    font-size: 1.2vmax;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 1vmax;
+    /* background-color: red; */
+}
+

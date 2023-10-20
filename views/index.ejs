@@ -1,0 +1,122 @@
+<%- include("code/header")%>
+<%- include("code/nav")%>
+
+<link rel="stylesheet" href="/stylesheets/index.css">
+<link rel="stylesheet" href="/stylesheets/product.css">
+<div class="homepage">
+    <div class="page1">
+        <div class="page1-left">
+            <h1>Lowest Prices <br>
+                Best Quality Shopping</h1>
+            <div class="leftboxs">
+                <div class="box1">
+                    <img src="https://images.meesho.com/images/pow/freeDelivery_jamun.svg" alt="">
+                    <h4>Free <br> Delivery</h4>
+                </div>
+                <hr>
+                <div class="box2">
+                    <img src="https://images.meesho.com/images/pow/cod_jamun.svg" alt="">
+                    <h4>Cash on <br> Delivery</h4>
+                </div>
+                <hr>
+                <div class="box3">
+                    <img src="https://images.meesho.com/images/pow/easyReturns_jamun.svg" alt="">
+                    <h4>Easy <br> Returns</h4>
+                </div>
+            </div>
+            <div class="appbtn">
+                <img src="https://images.meesho.com/images/pow/playstoreSmallIcon.png" alt="">
+                <h4>Download the Meesho App</h4>
+            </div>
+        </div>
+        <div class="page1-right">
+                <img src="https://images.meesho.com/images/marketing/1687149525469_512.webp" alt="">
+            
+        </div>
+    </div>
+    <div class="page2">
+        <div class="top-Categories">
+            <hr>
+            <h1>Top Categories to choose from</h1>
+            <hr>
+        </div>
+        <div class="first-ad">
+            <a class="first-ad-1" href="">
+                <img src="https://images.meesho.com/images/marketing/1692190996099_400.webp" alt="first-ad-1">
+            </a>
+            <a class="first-ad-2" href="">
+                <img src="https://images.meesho.com/images/marketing/1692191045019_300.webp" alt="first-ad-2">
+            </a>
+            <a class="first-ad-3" href="">
+                <img src="https://images.meesho.com/images/marketing/1692191103963_300.webp" alt="first-ad-3">
+            </a>
+        </div>
+
+        <div class="second-ad">
+            
+            <a class="second-ad-1" href="">
+                <img src="https://images.meesho.com/images/marketing/1690978007288_200.webp" alt="second-ad-1">
+                <br><button>Home Decore</button>
+            </a>
+            <a class="second-ad-2" href="">
+                <img src="https://images.meesho.com/images/marketing/1690978024110_200.webp" alt="second-ad-2">
+                <br><button>Kitchen Appliances</button>
+            </a>
+            <a class="second-ad-3" href="">
+                <img src="https://images.meesho.com/images/marketing/1690977994925_200.webp" alt="second-ad-3">
+                <br><button>Health Care</button>
+            </a>
+        </div>
+        
+        <div class="third-ad">
+            <h2>Become a Reseller and</h2>
+            <h1>
+                Start your Online Business <br>
+                with Zero Investment</h1>
+                <div class="app-img">
+                    <img src="https://images.meesho.com/images/pow/playstoreIcon_500.webp" alt="">
+                    <img src="https://images.meesho.com/images/pow/appstoreIcon_500.webp" alt="">
+                </div>
+        </div>
+
+        <a href="/supplirpage">
+            <div class="fourth-ad">
+                <h1>Register as a Meesho Supplier</h1>
+                <h3>Sell your products to crores of customers at 0% commission</h3>
+                <button>Sign up now</button>
+            </div>
+        </a>
+    </div>
+
+    <div class="product">
+    <% product.forEach(function(p){ %>
+
+        <a href="/productdetails/<%= p._id%>">
+
+
+            <div class="product-box">
+                <div class="product-box-img"><img src="<%= p.imglink1%>" alt=""></div>
+                <div class="product-box-name">
+                    <h3><%= p.productname%></h3>
+
+                </div>
+                <h2>₹ <%= p.productprice%> <span>onwards</span></h2>
+                <h5>₹ <%= p.deliverycharges%> delevery charges</h5>
+                <h5> <span> <%= p.rating%> <i class="ri-star-s-fill"></i> </span> reviews</h5>
+            </div>
+            
+
+
+        </a>
+
+    <% })%>
+            
+        </div>
+
+
+</div>
+
+
+<%- include("code/pagesfooter")%>
+
+<%- include("code/footer")%>

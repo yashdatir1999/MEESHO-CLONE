@@ -1,0 +1,18 @@
+<%- include("code/header")%>
+<link rel="stylesheet" href="/stylesheets/supplirlogin.css">
+
+<div class="supplirlogin">
+    <img src="https://images.meeshosupplyassets.com/meesho-logo-pink.svg" alt="">
+    <form action="/supplirlogin" method="post">
+        <h2>Login to your supplier panel</h2>
+        <br>
+        <input type="text" name="userid" placeholder="Email Id or mobile number" id=""><br>
+        <input type="password" name="password" placeholder="Password" id=""><br>
+        <a href="">Forgot password?</a><br>
+        <button>Log in</button>
+    </form>
+    <h5>New to Meesho?</h5>
+    <a href="/startselling">Create your supplire account</a>
+</div>
+
+<%- include("code/footer")%>

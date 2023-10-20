@@ -1,0 +1,442 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.productmodification{
+    height: 100vh;
+    width: 100%;
+    background-color: lightblue;
+}
+.productmodification{
+    height: 100vh;
+    width: 100%;
+    background-color: palegoldenrod;
+    background-image: url(https://i.pinimg.com/564x/81/28/a2/8128a21122ae90cd3130021d9be07ca0.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vmax;
+}
+.productmodification >nav{
+    height: 15vh;
+    width: 100%;
+    /* background-color: palegreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vmax;
+}
+.productmodification >nav > a >img{
+    height: 2.2vmax;
+}
+.productmodification >nav >h1{
+    font-size: 2vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.register{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    padding: 0.5vmax 0.8vmax;
+    border-radius: 0.3vmax;
+    color: white;
+    border: 0.1vmax solid transparent;
+    background-color:  rgb(60,41,183);
+    transition: all linear 0.2s;
+    font-family: sans-serif;
+}
+.register:hover{
+    border: 0.1vmax solid rgb(60,41,183);
+    background-color: transparent;
+    color: rgb(60,41,183);
+}
+
+.product-contener{
+    height: 80vh;
+    width: 95%;
+    /* background-color: pink; */
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+    box-shadow: 0 0 0.2vmax black;
+}
+.product-scroller{
+    /* height: 100%; */
+    width: 280%;
+    /* background-color: lightcyan; */
+    padding: 1vmax;
+}
+.product-contener::-webkit-scrollbar{
+    display: none;
+}
+.scroller-heading{
+    height: 10vh;
+    width: 100%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(227, 226, 171); */
+    border-bottom: 0.1vmax solid black;
+}
+.common{
+    color: rgb(251, 22, 22);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: auto;
+    font-size: 1vmax;
+
+}
+.common::-webkit-scrollbar{
+    display: none;
+}
+.common >h2{
+    text-transform: uppercase;
+    font-size: 1.3vmax;
+}
+
+hr{
+    border: 0.1vmax solid black;
+    height: 5vh;
+    justify-content: center;
+    margin-top: 1vh;
+}
+.srno{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 7vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+}
+.product-catagory{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 18.5vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+}
+.product-subcatagory{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 22vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+}
+.product-name{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 14vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+    overflow-x: auto;
+}
+.product-name::-webkit-scrollbar{
+    display: none;
+}
+.product-price{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 14vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+}
+.off{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 6vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+}
+.product-rating{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 14vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+}
+.product-reviews{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 16vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+}
+.product-soldby{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 15.5vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+    overflow-x: auto;
+}
+.product-soldby::-webkit-scrollbar{
+    display: none;
+}
+.available-quantity{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 17vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+}
+.delevery-charges{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 17vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+}
+.COD{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 16vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+}
+.origin-of-product{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 17.5vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+    overflow-x: auto;
+}
+.origin-of-product::-webkit-scrollbar{
+    display: none;
+}
+.image-link1{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 11vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+    overflow-x: auto;
+}
+.image-link1::-webkit-scrollbar{
+    display: none;
+}
+.image-link2{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 11vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+    overflow-x: auto;
+}
+.image-link2::-webkit-scrollbar{
+    display: none;
+}
+.image-link3{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 11vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+    overflow-x: auto;
+}
+.image-link3::-webkit-scrollbar{
+    display: none;
+}
+.image-link4{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 11vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    overflow-x: auto;
+    padding: 0 1vmax;
+}
+.image-link4::-webkit-scrollbar{
+    display: none;
+}
+.product-description{
+    height: 7vh;
+    border-bottom: 0.1vmax dashed black;
+    width: 20vw;
+    /* background-color: pink; */
+    justify-content: center;
+    margin-right: 1vmax;
+    margin-left: 1vmax;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 0.5vmax;
+    overflow-x: auto;
+}
+.product-description::-webkit-scrollbar{
+    display: none;
+}
+.update{
+    height: 7vh;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: black; */
+    justify-content: center;
+    font-weight: 700;
+}
+.update >h2 {
+    margin: auto;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 1vmax;
+}
+.update >h3 >a{
+    margin: auto;
+    padding: 0.5vmax;
+    background-color: rgb(82, 233, 82);
+    border-radius: 2vmax;
+    padding: 0.7vmax 1vmax;
+    font-size: 1vmax;
+    /* padding-top: 0.2vmax ; */
+    text-decoration: none;
+    color: black;}
+
+.delete >h3 >a{
+    font-size: 1vmax;
+    margin: auto;
+    font-weight: 700;
+    padding: 0.7vmax 1vmax;
+    /* padding-top: 0.9vmax; */
+    background-color: rgb(244, 80, 80);
+    border-radius: 2vmax;
+    text-decoration: none;
+    color: black;
+}
+.delete >h2 {
+    margin: auto;
+}
+.delete{
+    height: 7vh;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: black; */
+    font-weight: 700;
+}
+.records{
+    height: 10vh;
+    width: 100%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1vmax solid black;
+    /* background-color: yellow; */
+    
+}
+
+.noprodust{
+    word-spacing: 1.5vmax;
+    font-size: 3vmax;
+    font-weight: 900;
+    text-align: center;
+    margin: 1vmax 0;
+    color: red;
+}

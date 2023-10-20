@@ -1,0 +1,59 @@
+<%- include("code/header")%>
+    <link rel="stylesheet" href="/stylesheets/startselling.css">
+
+    <div class="startselling-nav">
+        <img src="https://images.meeshosupplyassets.com/meesho-logo-pink.svg" alt="">
+        <div class="login">
+            <span>Already a user?</span>
+            <a href="/supplirlogin">Login</a>
+        </div>
+    </div>
+    <div class="startselling">
+        <div class="startselling-left">
+            <h2>Welcome to Meesho</h2>
+            <h5>Create your account to start selling</h5>
+            <form action="/supplirregistration" method="post">
+                <input class="mobile" type="number" name="mob" placeholder="Enter Mobile number" id="">
+                <button class="otp">SEND OTP</button> <br>
+                <input class="common-inp" type="number" name="otp" placeholder="Enter OTP" id=""><br>
+                <input class="common-inp" type="email" name="email" placeholder="Email Id" id=""><br>
+                <input class="common-inp" type="password" name="password" placeholder="Password" id=""><br>
+                <input type="checkbox" name="whatsapp" id="">I want to receive important updates on WhatsApp
+                <br>
+                <button class="Create-btn">Create Account</button>
+            </form>
+        </div>
+        <div class="startselling-right">
+            <h3>Grow your business faster by selling on Meesho</h3>
+            <div class="startselling-right-top">
+
+                <div class="startselling-right-box1">
+                    <img src="https://images.meeshosupplyassets.com/supplier_community.svg" alt="">
+                    <h4>11 lakh+ <br> <span>Suppliers are selling commission-free</span></h4>
+                </div>
+                <div class="startselling-right-box2">
+                    <img src="https://images.meeshosupplyassets.com/pincode.svg" alt="">
+                    <h4>19000+ <br> <span>Pincodes supported for delivery</span></h4>
+                </div>
+            </div>
+            <div class="startselling-right-bottom">
+                <div class="startselling-right-box3">
+                    <img src="https://images.meeshosupplyassets.com/reach_india.svg" alt="">
+                    <h4>Crore of <br> <span>Customers buy across India</span></h4>
+                </div>
+                <div class="startselling-right-box4">
+                    <img src="https://images.meeshosupplyassets.com/categories.svg" alt="">
+                    <h4>700 + <br> <span>Categories to sell</span></h4>
+                </div>
+            </div>
+            <h2>All you need to sell on Meesho is:</h2>
+            <h4>
+                GSTIN or Enrolment ID / UIN
+                <br>
+                Bank Account
+            </h4>
+        </div>
+    </div>
+
+
+    <%- include("code/footer")%>

@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.supp-nav{
+    position: fixed;
+    top: 0;
+    height: 15vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 5vmax;
+    justify-content: space-between;
+}
+.supp-nav >a >img{
+    margin-right: 2vmax;
+}
+.supp-nav >ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2vmax;
+}
+.supp-nav >ul >li >a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1vmax;
+    font-weight: 600;
+    color: rgb(93, 82, 82);
+    transition: all linear 0.1s;
+}
+.supp-nav >ul >li >a:hover{
+    color: rgb(244,51,151);
+}
+.supp-login{
+    background-color: white;
+    padding: 0.7vmax 2.3vmax;
+    transform: translateX(1vmax);
+    font-size: 1.2vmax;
+    color: rgb(244,51,151);
+    border: 0.1vmax solid rgb(244,51,151);
+    text-decoration: none;
+    font-family: sans-serif;
+    border-radius: 0.4vmax;
+    transition: all linear 0.2s;
+}
+.supp-login:hover{
+    color: white;
+    background-color: rgb(244,51,151);
+}
+.startselling{
+    text-decoration: none;
+    font-family: sans-serif;
+    border-radius: 0.4vmax;
+    background-color: rgb(244,51,151);
+    padding: 0.8vmax 2vmax;
+    color: white;
+    font-size: 1vmaax;    
+    border-radius: 0.4vmax;
+    transition: all linear 0.2s;
+    border: 0.1vmax solid transparent;
+
+}
+.startselling:hover{
+    color: rgb(244,51,151);
+    background-color: white;
+    border: 0.1vmax solid rgb(244,51,151);
+}
+.supp-page1{
+    padding-top: 15vh;
+    height: 82vh;
+    width: 100%;
+    background-color: rgb(253,247,249);
+    background-image: url(https://supplier.meesho.com/images/Desktop-Background-1-p-1080.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    display: flex;
+}
+.supp-page1-left{
+    height: 82vh;
+    width: 60%;
+    /* background-color: rgb(234, 178, 178); */
+    padding: 7vmax 5vmax;
+}
+.supp-page1-left >h1{
+    font-size: 2.5vmax;
+    font-family: sans-serif;
+    margin-bottom: 2vmax;
+}
+.supp-page1-left >p{
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.708);
+    line-height: 1.7vmax;
+}
+.supp-page1-left >p >a{
+    text-decoration: none;
+    padding: 0.3vmax 0.7vmax;
+    /* padding-top: 0.5vmax; */
+    background-color: rgb(244,51,151);
+    border-radius: 0.3vmax;
+    color: white;
+    animation: newbtn linear 0.5s infinite 0.5s alternate-reverse ;
+}
+@keyframes newbtn {
+    0%{
+        background-color: transparent;
+        color: rgb(244,51,151);
+        border: 0.1vmax solid rgb(244,51,151);
+    }
+    100%{
+    background-color: rgb(244,51,151);
+    color: white;
+    border: 0.1vmax solid transparent;
+    }
+}
+.supp-page1-left >form{
+    height: 8vh;
+    width: 75%;
+    margin-top: 4vmax;
+    margin-left: -2vmax;
+}
+.supp-page1-left >form >input{
+    padding: 1.1vmax ;
+    padding-left: 4vmax;
+    width: 70%;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0.1vmax rgba(0, 0, 0, 0.674);
+}
+.supp-page1-left >form span{
+    transform: translateX(3vmax);
+    position: relative;
+    left: 7%;
+    font-family: sans-serif;
+}
+.supp-page1-left >form >button{
+    font-size: 1.1vmax;
+    padding: 1.2vmax 1.5vmax;
+    border: none;
+    border-top-right-radius: 0.3vmax;
+    border-bottom-right-radius: 0.3vmax;
+    background-color: rgb(244,51,151);
+    color: white;
+}
+.supp-page1-right{
+    height: 82vh;
+    width: 40%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: end;
+}
+.supp-page1-right >img{
+    height: 67vh;
+}
+.supp-page2{
+    height: 60vh;
+    width: 100%;
+    /* background-color: palegreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 3vmax;
+}
+.supp-page2-box1 ,.supp-page2-box2 ,.supp-page2-box3 ,.supp-page2-box4{
+    height: 35vh;
+    width: 22vw;
+    background-color: whitesmoke;
+    padding: 2vmax;
+    border-radius: 0.7vmax;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.supp-page2-box1 >h1 ,.supp-page2-box2 >h1,.supp-page2-box3 >h1,.supp-page2-box4 >h1{
+    font-family: sans-serif;
+    color: rgb(244,51,151);
+}
+.supp-page2-box1 >h2 ,.supp-page2-box2 >h2 ,.supp-page2-box3 >h2 ,.supp-page2-box4 >h2{
+    font-family: sans-serif;
+}

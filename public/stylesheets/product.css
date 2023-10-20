@@ -1,0 +1,84 @@
+.product{
+    /* height: 100vh; */
+    width: 100%;
+    /* background-color: pink; */
+    padding: 2vmax 7vmax;
+}
+.product-box{
+    display: inline-block;
+    /* display: flex; */
+    margin: 2vmax 2.5vmax;
+    height: 67vh;
+    width: 23vw;
+    background-color: whitesmoke;
+    box-shadow: 0 0 0.5vmax rgba(0, 0, 0, 0.5);
+    border-radius: 0.5vmax;
+    padding: 1vmax 2vmax;
+    transition: all linear 0.1s;
+}
+.product-box:hover{
+    box-shadow: 0 0 1vmax rgba(0, 0, 0, 0.712);
+}
+.product-box-img{
+    height: 40vh;
+    width: 70%;
+    /* background-color: green; */
+    margin: auto;
+    transition: all linear 0.3s;
+    overflow: hidden;
+}
+.product-box-img:hover >img{
+    transition: all linear 0.3s;
+    scale: 1.1;
+}
+.product-box-img >img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.product-box-name{
+    width: 100%;
+    height: 6vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.product-box-name >h3{
+    /* overflow-y: hidden; */
+    /* background-color: orange; */
+    margin: 1vmax 0vmax;
+    font-family: sans-serif;
+    color: rgba(44, 43, 43, 0.648);
+    font-size: 1.3vmax;
+}
+.product-box >h3::-webkit-scrollbar{
+    display: none;
+}
+.product-box >h2{
+    margin: 1vmax 0;
+    color: black;
+    font-family: sans-serif;
+}
+.product-box >h2 >span{
+    font-size: 1vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(54, 52, 52);
+    margin-bottom: 1vmax;
+}
+.product-box >h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgba(27, 26, 26, 0.589);
+    margin-top: 1vmax;
+}
+.product-box >h5 >span{
+    margin-right: 0.5vmax;
+    border-radius: 1vmax;
+    background-color: green;
+    padding: 0.5vmax 0.7vmax;
+    font-size: 1.1vmax;
+    color: white;
+}
+.product-box >h5 >span >i{
+    margin-left: 0.3vmax;
+}

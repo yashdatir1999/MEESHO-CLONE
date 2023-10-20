@@ -1,0 +1,154 @@
+.productdetails{
+    height: 200vh;
+    width: 100%;
+    background-color: lightpink;
+    display: flex;
+}
+.productdetails-left{
+    height: 200vh;
+    width: 50%;
+    background-color: lightblue;
+    padding-left: 10vmax;
+    padding-top: 3vmax;
+}
+.productdetails-left-images{
+    height: 80vh;
+    width: 100%;
+    background-color: aqua;
+    padding-right: 3vmax;
+    display: flex;
+    justify-content: space-between;
+}
+.productdetails-left-smallimages{
+    height: 53vh;
+    width: 5vw;
+    background-color: yellowgreen;
+}
+.product-img1 ,.product-img2 ,.product-img3 ,.product-img4{
+    height: 11.5vh;
+    width: 5vw;
+    margin-bottom: 1vmax;
+    background-color: red;
+    overflow: hidden;
+    box-shadow: 0 0 0.3vmax black;
+    border-radius: 0.7vmax;
+}
+.product-img1 >img ,.product-img2 >img,.product-img3 >img,.product-img4 >img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.productdetails-left-bigimages{
+    height: 70vh;
+    width: 27vw;
+    overflow: hidden;
+    background-color: orange;
+    border-radius: 0.7vmax;
+}
+.productdetails-left-bigimages >img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.addcart{
+    /* background-color: teal; */
+    padding: 1.3vmax 3vmax;
+    font-family: sans-serif;
+    margin-left: 9.5vmax;
+    text-decoration: none;
+    font-size: 1.3vmax;
+    font-weight: 100;
+    border: 0.1vmax solid rgb(159,32,137);
+}
+.buynow{
+    font-size: 1.3vmax;
+    font-weight: 100;
+    font-family: sans-serif;
+    padding: 1.3vmax 3.3vmax;
+    background-color: rgb(159,32,137);
+    margin-left: 0.5vmax;
+    color: white;
+    text-decoration: none;
+}
+.productdetails-right{
+    height: 200vh;
+    width: 50%;
+    background-color: lightgreen;
+    padding: 3vmax 2vmax;  
+}
+.productdetails-right >h2{
+    width: 80%;
+    font-family: sans-serif;
+    font-size: 1.3vmax;
+    color: rgba(49, 48, 48, 0.772);
+}
+.productdetails-right >h1{
+    font-family: sans-serif;
+    margin-top: 1vmax;
+    color: rgba(0, 0, 0, 0.817);
+}
+.productdetails-right >h5{
+    font-size: 1.1vmax;
+    margin-top: 1.5vmax;
+    color: rgb(39, 38, 38);
+    font-family: sans-serif;
+}
+.productdetails-right >h5 >span{
+    background-color: rgb(3,141,99);
+    padding: 0.4vmax 0.7vmax;
+    color: white;
+    margin-right: 0.8vmax;
+    border-radius: 1.5vmax;
+}
+.productdetails-right >h5 >span >i{
+    margin-left: 0.2vmax;
+}
+.productdetails-right >h6{
+    margin-top: 1.5vmax;
+    font-family: sans-serif;
+}
+.productdetails-right >h3{
+    margin-top: 5vmax;
+    font-family: sans-serif;
+    color: rgb(28, 28, 28);
+    font-size: 1.5vmax;
+}
+.productdetails-right >p{
+    width: 15vw;
+    margin-top: 2vmax;
+    font-size: 1.3vmax;
+    /* font-weight: 700; */
+    font-family: sans-serif;
+    color: rgb(28, 28, 28);
+}
+.productdetails-right >h4{
+    margin-top: 3vmax;
+    font-family: sans-serif;
+    font-size: 1.4vmax;
+    color: rgb(17, 16, 16);
+}
+.soldby{
+    height: 10vh;
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    margin-top: 3vmax;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(20, 20, 20);
+}
+.soldby >img{
+    height: 100%;
+    margin-right: 2vmax;
+}
+.soldby >button{
+    font-weight: 500;
+    font-size: 1.3vmax;
+    padding: 1vmax 2vmax;
+    margin-left: 13vmax;
+    border: 0.1vmax solid rgb(159,32,137);
+    color: rgb(159,32,137);
+    border-radius: 0.7vmax;
+    background-color: transparent;
+}

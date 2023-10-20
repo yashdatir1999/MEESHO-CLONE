@@ -1,0 +1,282 @@
+<%- include("code/header")%>
+<link rel="stylesheet" href="/stylesheets/productmodification.css">
+
+<div class="productmodification">
+
+    <nav>
+        <a href="/"><img src="https://supplier.meesho.com/images/logo.svg" alt=""></a>
+        <h1> PRODUCT MODIFAICATION</h1>
+        <a class="register" href="/productregistration">PRODUCT <br> REGISTRATION</a>
+    </nav>
+
+<div class="product-contener">
+<div class="product-scroller">
+    <div class="scroller-heading">
+
+        <div class="srno common">
+            <h2>SR. No.</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="product-catagory common">
+            <h2>product catagory</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="product-subcatagory common">
+            <h2>product sub-catagory</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="product-name common">
+            <h2>product name</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="product-price common">
+            <h2>product price</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="off common">
+            <h2>% off</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="product-rating common">
+            <h2>product rating </h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="product-reviews common">
+            <h2>product reviews</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="product-soldby common">
+            <h2>product sold by</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="available-quantity common">
+            <h2>available quantity</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="delevery-charges common">
+            <h2>delevery-charges</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="COD common">
+            <h2>CASH ON DELEVER</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="origin-of-product common">
+            <h2>origin of product</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="image-link1 common">
+            <h2>image link 1</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="image-link2 common">
+            <h2>image link 2</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="image-link3 common">
+            <h2>image link 3</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="image-link4 common">
+            <h2>image link 4</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="product-description common">
+            <h2>product description</h2>
+        </div>
+
+        <hr class="common">
+
+        <div class="update common">
+            <h2>UPDATE</h2>
+        </div>
+
+        <hr class="common">
+        
+        <div class="delete common">
+            <h2>DELETE</h2>
+        </div>
+
+
+        
+    </div>
+
+    <!-- reading the products with the help of ForEach -->
+    
+    <% if(product.length === 0){ %>
+        <h1 class="message">NO DATA AVALABLE </h1>
+        <% } %>
+        
+        <% product.forEach(function(pro , idx){ %>
+
+        <div class="records">
+
+            <div class="srno">
+                <h3> <%= idx+1%></h3>
+            </div>
+
+            <hr>
+
+            <div class="product-catagory">
+                <h3><%= pro.catagory%></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="product-subcatagory">
+                <h3><%=pro.subcatagory%></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="product-name">
+                <h3><%=pro.productname%></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="product-price">
+                <h3>₹ <%= pro.productprice%></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="off">
+                <h3><%= pro.off%></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="product-rating">
+                <h3><%= pro.rating%> ⭐</h3>
+            </div>
+    
+            <hr>
+    
+            <div class="product-reviews">
+                <h3><%=pro.reviews%></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="product-soldby">
+                <h3><%= pro.soldby%></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="available-quantity">
+                <h3><%= pro.availablequantity%></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="delevery-charges">
+                <h3><%= pro.deliverycharges%></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="COD">
+                <h3> <%= pro.COD%></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="origin-of-product">
+                <h3><%= pro.country %></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="image-link1">
+                <h3><%= pro.imglink1 %></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="image-link2">
+                <h3><%= pro.imglink2 %></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="image-link3">
+                <h3><%= pro.imglink3 %></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="image-link4">
+                <h3><%= pro.imglink4 %></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="product-description">
+                <h3> <%= pro.description%></h3>
+            </div>
+    
+            <hr>
+    
+            <div class="update">
+                <h3><a href="/update/<%= pro._id%>">UPDATE</a></h3>
+            </div>
+    
+            <hr>
+            
+            <div class="delete">
+                <h3><a href="/delete/<%= pro._id %>">DELETE</a></h3>
+            </div>
+
+            
+        </div>
+
+    <% }) %>
+
+
+    <h1 class="noprodust">❗❗ No More Products Are Avalable ❗❗</h1>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+<%- include("code/footer")%>

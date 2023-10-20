@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.startselling-nav {
+    height: 15vh;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vmax;
+}
+
+.login>span {
+    font-family: sans-serif;
+    font-size: 0.9vmax;
+    font-weight: 700;
+    color: rgb(51, 49, 49);
+}
+
+.login>a {
+    background-color: transparent;
+    padding: 0.8vmax 2vmax;
+    font-family: sans-serif;
+    font-size: 1vmax;
+    font-weight: 700;
+    margin-left: 1vmax;
+    text-decoration: none;
+    border-radius: 0.3vmax;
+    border: 0.1vmax solid rgb(60, 41, 183);
+    color: rgb(60, 41, 183);
+}
+
+.startselling {
+    height: 100vh;
+    width: 100%;
+    background-color:whitesmoke;
+    display: flex;
+}
+
+.startselling-left {
+    height: 100vh;
+    width: 45%;
+    background-color: white;
+    padding-top: 15vh;
+    padding-left: 10vmax;
+    padding-right: 3vmax;
+}
+.startselling-left >h2{
+    font-size: 1.4vmax;
+    font-family: sans-serif;
+    margin-bottom: 1vmax;
+}
+.startselling-left >h5{
+    font-family: sans-serif;
+    margin-bottom: 3vmax;
+    color: rgb(81, 76, 76);
+}
+.startselling-left>form {
+    height: 65vh;
+    /* background-color: rgb(231, 179, 179); */
+}
+.mobile{
+    width: 70%;
+    padding: 1vmax 1vmax;
+}
+.otp{
+    padding: 1.1vmax 1.5vmax;
+    font-weight: 700;
+    background-color: rgb(60,41,183);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 0.3vmax;
+}
+.common-inp{
+    padding: 1vmax ;
+    width: 98.5%;
+    margin: 0.8vmax 0;
+}
+.startselling-left >form{
+    font-family: sans-serif;
+    font-size: 1vmax;
+}
+.startselling-left >form >input{
+    margin-right: 0.5vmax;
+    background-color: transparent;
+    border: 0.1vmax solid rgba(33, 31, 31, 0.537);
+}
+.Create-btn{
+    padding: 1.3vmax;
+    width: 98.5%;
+    margin-top: 2vmax;
+    font-weight: 700;
+    background-color: rgb(60,41,183);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 0.3vmax;
+}
+.startselling-right {
+    height: 100vh;
+    width: 55%;
+    padding-top: 15vh;
+    padding-left: 5vmax;
+    /* background-color: aqua; */
+}
+.startselling-right-top ,.startselling-right-bottom{
+    height: 10vh;
+    width: 40vw;
+    /* background-color: red; */
+    display: flex;
+    gap: 1vmax;
+    margin-top: 2vmax;
+}
+.startselling-right-box1 ,.startselling-right-box2 ,.startselling-right-box3 ,.startselling-right-box4{
+    height: 10vh;
+    width: 50%;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    gap: 1vmax;
+}
+.startselling-right-box1 >h4 ,.startselling-right-box2 >h4 ,.startselling-right-box3 >h4 ,.startselling-right-box4 >h4{
+    font-size: 1vmax;
+    font-family: sans-serif;
+}
+.startselling-right-box1 >h4 >span ,.startselling-right-box2 >h4 >span ,.startselling-right-box3 >h4 >span ,.startselling-right-box4 >h4 >span{
+    font-size: 0.8vmax;
+    font-weight: 100;
+    color: rgb(46, 45, 45);
+}
+.startselling-right >h2{
+    font-family: sans-serif;
+    font-size: 1.3vmax;
+    margin-top: 5vmax;
+    margin-bottom: 3vmax;
+}
+.startselling-right >h4{
+    font-family: sans-serif;
+    font-size: 1.1vmax;
+    color: rgb(52, 51, 51);
+    line-height: 2.5vmax;
+    font-weight: 100;
+}

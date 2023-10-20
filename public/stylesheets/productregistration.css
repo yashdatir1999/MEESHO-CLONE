@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.productregistration{
+    height: 100vh;
+    width: 100%;
+    background-color: palegoldenrod;
+    background-image: url(https://i.pinimg.com/564x/81/28/a2/8128a21122ae90cd3130021d9be07ca0.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vmax;
+}
+.productregistration >nav{
+    height: 15vh;
+    width: 100%;
+    /* background-color: palegreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vmax;
+}
+.productregistration >nav > a >img{
+    height: 2.2vmax;
+}
+.productregistration >nav >h1{
+    font-size: 2vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.modify{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    padding: 0.5vmax 0.8vmax;
+    border-radius: 0.3vmax;
+    color: white;
+    border: 0.1vmax solid transparent;
+    background-color:  rgb(60,41,183);
+    transition: all linear 0.2s;
+    font-family: sans-serif;
+}
+.modify:hover{
+    border: 0.1vmax solid rgb(60,41,183);
+    background-color: transparent;
+    color: rgb(60,41,183);
+}
+form{
+    height: 80vh;
+    width: 90%;
+    /* background-color: pink; */
+    backdrop-filter: blur(2vmax);
+    box-shadow: 0 0 0.8vmax  rgba(0, 0, 0, 0.693);
+    padding: 3vmax 6vmax;
+}
+form >select{
+    height: 5vh;
+    width: 16.5vw;
+    margin: 1vmax 1.2vmax;
+    padding: 0 1vmax;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 0.1vmax solid black;
+    border-radius: 0.5vmax;
+    font-weight: 700;
+}
+form >select::-webkit-scrollbar{
+    display: none;
+}
+form >select >option{
+    background-color: black;
+    color: white;
+    border-radius: 1vmax;
+}
+form >input{
+    padding: 0.5vmax 2vmax;
+    margin: 1vmax 1vmax;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 0.1vmax solid black;
+    border-radius: 0.5vmax;
+    font-weight: 700;
+    overflow-x: auto;
+}
+form >input::-webkit-scrollbar{
+    display: none;
+}
+form >input::placeholder{
+    color: black;
+    font-weight: 700;
+}
+form >textarea{
+    position: relative;
+    top: 8%;
+    left: 1.3%;
+    height: 25vh;
+    width: 71%;
+    margin-right: 5vmax;
+    background-color: transparent;
+    padding: 1vmax;
+    border: 0.1vmax solid black;
+    outline: none;
+    font-size: 1.5vmax;
+}
+form >textarea::placeholder{
+    color: rgb(26, 26, 26);
+    font-size: 1.5vmax;
+}
+form >button{
+    font-size: 1.4vmax;
+    padding: 1vmax 3vmax;
+    font-weight: 700;
+    border-radius: 1vmax;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 0 0.2vmax black;
+    transition: all linear 0.2s;
+       margin-left: 3vmax;
+    transform: translateX(5vmax);
+}
+form >button:hover{
+    box-shadow: 0 0 0.9vmax rgb(34, 33, 33);
+}
+form >button:active{
+    scale: 0.9;
+}

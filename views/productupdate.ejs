@@ -1,0 +1,73 @@
+<%- include("code/header")%>
+<link rel="stylesheet" href="/stylesheets/productupdate.css">
+
+<div class="productupdate">
+
+    <nav>
+        <a href="/"><img src="https://supplier.meesho.com/images/logo.svg" alt=""></a>
+        <h1> PRODUCT UPDATE</h1>
+        <a class="modify" href="/productmodification">PRODUCT <br> MODIFAICATION</a>
+    </nav>
+    
+    <form action="/productupdate/<%= product._id%>" method="post">
+        
+        <select disabled name="catagory" id="catagory" onchange="populate(this.id , 'subcatagory')">
+            <option value="">--PRODUCT CATAGORY--</option>
+            <option value="womenethnic">WOMEN  ETHINIC </option>
+            <option value="womenwestern">WOMEN WESTERN</option>
+            <option value="men">MEN</option>
+            <option value="kids">KIDS</option>
+            <option value="homekitchen">HOME & KITCHAN</option>
+            <option value="beautyhealth">BEAUTY & HEALTH</option>
+            <option value="jewelleryaccessories">JEWELLERY & ACCESSORIES</option>
+            <option value="bagsfootwere">BAGS & FOOTWERE</option>
+            <option value="electronics">ELECTRONICS</option>
+            <option value="beautyhealth">BEAUTY & HEALTH</option>
+        </select>
+
+        <select disabled name="subcatagory" id="subcatagory">
+            <option value="">--PRODUCT SUBCATAGORY--</option>
+        </select>
+
+        <input type="text" value="<%= product.productname%>" name="productname" placeholder="PRODUCT NAME" id="">
+
+        <input type="number" value="<%= product.productprice%>"name="productprice" placeholder="PRODUCT PRICE ₹" id="">
+
+        <input type="number" value="<%= product.off%>" name="off" placeholder="% OFF" id="">
+
+        <input type="number" value="<%= product.rating%>" name="rating" placeholder="PRODUCT RATING" id="">
+
+        <input type="number" value="<%= product.reviews%>" name="reviews" placeholder="PRODUCT REVIEWS ⭐" id="">
+
+        <input type="text" value="<%= product.soldby%>" name="soldby" placeholder="PRODUCT SOLD BY" id="">
+        
+        <input type="number" value="<%= product.availablequantity%>" name="availablequantity" placeholder="AVAILABLE QUANTITY" id="">
+        <input type="number" value="<%= product.deliverycharges%>" name="deliverycharges" value="0" placeholder="DELEVERY CHARGES ₹" id="">
+        <select value="<%= product.COD%>" name="COD" id="">
+            <option value="">CASH ON DELEVERY</option>
+            <option value="codavailable">COD AVAILABLE</option>
+            <option value="codnotavailable">COD NOT AVAILABLE</option>
+        </select>
+        
+        <select disabled name="country" id="">
+            <option value="">ORIGIN OF PRODUCT</option>
+            <% countrylist.forEach(function(cntry){ %>
+                <option 
+                <%= product.cntry === cntry ? "selected" : "" %>
+                value="<%= cntry%>"> <%= cntry%> </option>
+            <%})%>
+        </select>
+
+        <input type="text" value="<%= product.imglink1%>" name="imglink1" placeholder="1st IMAGE LINK" id="">
+        <input type="text" value="<%= product.imglink2%>" name="imglink2" placeholder="2nd IMAGE LINK" id="">
+        <input type="text" value="<%= product.imglink3%>" name="imglink3" placeholder="3rd IMAGE LINK" id="">
+        <input type="text" value="<%= product.imglink4%>" name="imglink4" placeholder="4th IMAGE LINK" id="">
+
+        <textarea  name="description" id="" placeholder="PRODUCT DESCRIPTION" cols="30" rows="10">value="<%= product.description%>"</textarea>
+        <button>UPDATE</button>
+    </form>
+
+</div>
+
+<script src="/javascripts/productregistration.js"></script>
+<%- include("code/footer")%>

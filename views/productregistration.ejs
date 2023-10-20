@@ -1,0 +1,71 @@
+<%- include("code/header")%>
+<link rel="stylesheet" href="/stylesheets/productregistration.css">
+
+<div class="productregistration">
+
+    <nav>
+        <a href="/"><img src="https://supplier.meesho.com/images/logo.svg" alt=""></a>
+        <h1> PRODUCT REGISTRATION</h1>
+        <a class="modify" href="/productmodification">PRODUCT <br> MODIFAICATION</a>
+    </nav>
+    
+    <form action="/productregistration" method="post">
+        
+        <select name="catagory" id="catagory" onchange="populate(this.id , 'subcatagory')">
+            <option value="">--PRODUCT CATAGORY--</option>
+            <option value="womenethnic">WOMEN  ETHINIC </option>
+            <option value="womenwestern">WOMEN WESTERN</option>
+            <option value="men">MEN</option>
+            <option value="kids">KIDS</option>
+            <option value="homekitchen">HOME & KITCHAN</option>
+            <option value="beautyhealth">BEAUTY & HEALTH</option>
+            <option value="jewelleryaccessories">JEWELLERY & ACCESSORIES</option>
+            <option value="bagsfootwere">BAGS & FOOTWERE</option>
+            <option value="electronics">ELECTRONICS</option>
+            <option value="beautyhealth">BEAUTY & HEALTH</option>
+        </select>
+
+        <select name="subcatagory" id="subcatagory">
+            <option value="">--PRODUCT SUBCATAGORY--</option>
+        </select>
+
+        <input type="text" name="productname" placeholder="PRODUCT NAME" id="">
+
+        <input type="number" name="productprice" placeholder="PRODUCT PRICE ₹" id="">
+
+        <input type="number" name="off" placeholder="% OFF" id="">
+
+        <input type="number" name="rating" placeholder="PRODUCT RATING ⭐" id="">
+
+        <input type="number" name="reviews" placeholder="PRODUCT REVIEWS " id="">
+
+        <input type="text" name="soldby" placeholder="PRODUCT SOLD BY" id="">
+        
+        <input type="number" name="availablequantity" placeholder="AVAILABLE QUANTITY" id="">
+        <input type="number" name="deliverycharges" value="0" placeholder="DELEVERY CHARGES ₹" id="">
+        <select name="COD" id="">
+            <option value="">CASH ON DELEVERY</option>
+            <option value="codavailable">COD AVAILABLE</option>
+            <option value="codnotavailable">COD NOT AVAILABLE</option>
+        </select>
+        
+        <select name="country" id="">
+            <option value="">ORIGIN OF PRODUCT</option>
+            <% countrylist.forEach(function(cntry){ %>
+                <option value="<%= cntry%>"> <%= cntry%> </option>
+            <%})%>
+        </select>
+
+        <input type="text" name="imglink1" placeholder="1st IMAGE LINK" id="">
+        <input type="text" name="imglink2" placeholder="2nd IMAGE LINK" id="">
+        <input type="text" name="imglink3" placeholder="3rd IMAGE LINK" id="">
+        <input type="text" name="imglink4" placeholder="4th IMAGE LINK" id="">
+
+        <textarea name="description" id="" placeholder="PRODUCT DESCRIPTION" cols="30" rows="10"></textarea>
+        <button>SUBMIT</button>
+    </form>
+
+</div>
+
+<script src="/javascripts/productregistration.js"></script>
+<%- include("code/footer")%>

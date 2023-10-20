@@ -1,0 +1,44 @@
+<%- include("code/header")%>
+    <%- include("code/nav")%>
+        <link rel="stylesheet" href="/stylesheets/productdetails.css">
+
+
+        <div class="productdetails">
+            <div class="productdetails-left">
+                <div class="productdetails-left-images">
+                    <div class="productdetails-left-smallimages">
+                        <div class="product-img1"><img src="<%= product.imglink1%>" alt=""></div>
+                        <div class="product-img2"><img src="<%= product.imglink2%>" alt=""></div>
+                        <div class="product-img3"><img src="<%= product.imglink3%>" alt=""></div>
+                        <div class="product-img4"><img src="<%= product.imglink4%>" alt=""></div>
+                    </div>
+                    <div class="productdetails-left-bigimages">
+                        <img src="<%= product.imglink1%>" alt="">
+                    </div>
+                </div>
+                    <a class="addcart" href=""><i class="ri-shopping-cart-2-line"></i> Add to Cart</a>
+                    <a class="buynow" href=""><i class="ri-arrow-right-double-line"></i> Buy Now</a>
+            </div>
+            <div class="productdetails-right">
+                <h2><%= product.productname%></h2>
+                <h1>₹ <%= product.productprice%></h1>
+                <h5> <span> <%= product.rating%> <i class="ri-star-s-fill"></i> </span> <%= product.rating%> Rating</h5>
+                <h6><%= product.deliverycharges%> Delivery Charges</h6>
+
+                <h3>Product Details</h3>
+                <p>
+                    <%= product.description%>
+                </p>
+
+                <h4>Sold By</h4>
+                <div class="soldby">
+                    <img src="https://images.meesho.com/images/pow/shop_100.webp" alt="">
+                    <%= product.soldby%>
+                    <button>View Shop</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <%- include("code/footer")%>

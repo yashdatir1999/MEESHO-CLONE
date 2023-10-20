@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 125%;
+    width: 100%;
+    background-color: pink;
+}
+.filler{
+    height: 12vh;
+    width: 100%;
+    /* background-color: green; */
+}
+
+.topnav{
+    height: 12vh;
+    width: 100%;
+    padding: 2vmax ;
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 0.3vmax rgb(128, 121, 143);
+}
+.topnav >h2 >a{
+    text-decoration: none;
+    user-select: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3vmax;
+    font-weight: 500;
+    color: rgb(87,13,72);
+}
+.topnav >h2:active{
+    scale: 0.9;
+}
+.topnav >input{
+    height: 8vh;
+    width: 29vw;
+    outline: none;
+    border-radius: 0.3vmax;
+    border: 2px solid rgba(146, 139, 163, 0.846);
+    padding-left: 3.5vmax;
+    margin-right: 1.5vmax;
+}
+.topnav >input::placeholder{
+    color: rgb(146,139,163);
+    font-size: 1.1vmax;
+}
+.topnav >i{
+    position: absolute;
+    left: 16vmax;
+    color: rgb(146,139,163);
+    font-size: 2vmax;
+}
+.app{
+    display: flex;
+    align-items: center;
+    /* background-color: palegreen; */
+    gap: 0.5vmax;
+}
+.app >i{
+    font-size: 2vmax;
+    color: rgb(100, 94, 113);
+
+}
+.app >h3{
+    font-size: 1.2vmax;
+    color: rgb(39, 36, 45);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+}
+.DownloadApp{
+    top: 100%;
+    left: 46%;
+    position: absolute;
+    height: 30vh;
+    z-index: 10;
+    width: 15vw;
+    box-shadow: 0 0 0.2vmax rgba(0, 0, 0, 0.651);
+    background-color: white;
+    display: none;
+    
+}
+.DownloadApp >h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6vmax;
+    padding-top: 2vh;
+    padding-left: 1.5vmax;
+}
+.DownloadApp >img{
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.profile-login{
+    top: 100%;
+    right: 2%;
+    position: absolute;
+    height: 30vh;
+    z-index: 10;
+    width: 18vw;
+    border-radius: 0.5vmax;
+    /* box-shadow: 0 0 0.2vmax rgba(51, 50, 50, 0.651); */
+    background-color: white;
+    display: none;
+    padding: 1vmax;
+}
+.profile-login a{
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.profile-login >h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+    margin-bottom: 0.8vmax;
+    color: rgb(36, 35, 35);
+}
+.profile-login >hr{
+    height: 1px;
+    margin: 1.5vmax 0;
+    border: 0.1px solid rgb(109, 98, 98);
+}
+.profile-login >h6{
+    font-family: sans-serif;
+    font-size: 0.8vmax;
+    margin-bottom: 2vmax;
+    font-weight: 100;
+    color: rgb(32, 31, 31);
+}
+.profile-login >.signup{
+    background-color: rgb(146, 25, 126);
+    margin-top: 2vmax;
+    padding: 1vmax 5.7vmax;
+    color: white;
+}
+.order{
+    /* background-color: rgb(168, 160, 175); */
+    padding: 1vmax 4.8vmax 1vmax 1vmax;
+    font-size: 1.5vmax;
+}
+.order >i{
+    font-weight: 100;
+    font-size: 1.3vmax;
+}
+.order >span{
+    color: rgb(31, 29, 29);
+    font-weight: 600;
+    margin-left: 0.8vmax;
+}
+.topnav >hr{
+    height: 6vh;
+    border: 0.1vmax solid rgb(146,139,163);
+}
+.topnav >h3{
+    font-size: 1.2vmax;
+    color: rgb(39, 36, 45);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topnav >h3 >a{
+    color: rgb(39, 36, 45);
+    text-decoration: none;
+}
+.profile{
+    padding: 1vmax;
+    /* background-color: palegreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile >i{
+    font-size: 1.5vmax;
+    color: rgb(39, 36, 45);
+    margin-bottom: -0.1vmax;
+}
+.profile >h3{
+    font-size: 1.2vmax;
+    color: rgb(39, 36, 45);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cart{
+    padding: 1vmax;
+    /* background-color: palegreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart >i{
+    color: rgb(39, 36, 45);
+    font-size: 1.5vmax;
+    margin-bottom: -0.1vmax;
+}
+.cart >h3{
+    font-size: 1.2vmax;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(39, 36, 45);
+
+}
+
+/* ///////////////////// */
+
+.signup-box{
+    height: 145vh;
+    width: 100%;
+    background-color: rgb(253,235,240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-area{
+    height: 125vh;
+    width: 30%;
+    border-radius: 0.7vmax;
+    background-color: white;
+    margin-bottom: 7vh;
+}
+.form-area >img{
+    border-top-right-radius: 0.7vmax;
+    border-top-left-radius: 0.7vmax;
+    height: 35vh;
+    width: 100%;
+    object-fit: cover;
+}
+.form-area >h2{
+    color: rgb(46, 44, 44);
+    /* background-color: aqua; */
+    margin-left: 4vmax;
+    margin-top: 5vmax;
+    margin-bottom: 2vmax;
+    font-size: 1.4vmax;
+    font-family: sans-serif;
+}
+.form-area >form{
+    height: 20vh;
+    padding: 0 3vmax;
+    /* background-color: lightcyan; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form-area >form >input{
+    width: 95%;
+    padding: 0.7vmax;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1vmax solid black;
+    transition: all linear 0.2s;
+}
+.form-area >form >input:hover{
+    border-radius: 0.8vmax;
+}
+.form-area >form >button{
+    width: 100%;
+    padding: 0.9vmax 3vmax;
+    font-size: 1.3vmax;
+    color: white;
+    border: none;
+    border-radius: 0.4vmax;
+    background-color: rgb(159,32,137);
+}
+.form-area >p{
+    color: rgb(159,32,137);
+    font-size: 0.9vmax;
+    margin-top: 15vmax;
+    text-align: center;
+    font-family: sans-serif;
+}
+.form-area >p >span{
+    color: rgb(42, 41, 41);
+    font-size: 0.8vmax;
+}
