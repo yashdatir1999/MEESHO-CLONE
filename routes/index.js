@@ -38,7 +38,6 @@ router.get('/WomenEthnic/AllSarees', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('allsarees', { product });
   } catch (error) {
     res.send(error)
@@ -54,7 +53,6 @@ router.get('/WomenEthnic/SilkSarees', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('silksarees', { product });
   } catch (error) {
     res.send(error)
@@ -71,7 +69,6 @@ router.get('/WomenEthnic/CottonSilkSarees', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('cottonsilksarees', { product });
   } catch (error) {
     res.send(error)
@@ -87,7 +84,6 @@ router.get('/WomenEthnic/CottonSarees', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('cottonsarees', { product });
   } catch (error) {
     res.send(error)
@@ -104,7 +100,6 @@ router.get('/WomenEthnic/GeorgetteSarees', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('georgettesarees', { product });
   } catch (error) {
     res.send(error)
@@ -121,7 +116,6 @@ router.get('/WomenEthnic/ChiffonSarees', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('chiffonsarees', { product });
   } catch (error) {
     res.send(error)
@@ -138,7 +132,6 @@ router.get('/WomenEthnic/SatinSarees', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('satinsarees', { product });
   } catch (error) {
     res.send(error)
@@ -155,7 +148,6 @@ router.get('/WomenEthnic/EmbroideredSarees', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('embroideredsarees', { product });
   } catch (error) {
     res.send(error)
@@ -175,7 +167,6 @@ router.get('/WomenEthnic/AllKurtis', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('allkurtis', { product });
   } catch (error) {
     res.send(error)
@@ -192,7 +183,6 @@ router.get('/WomenEthnic/AnarkaliKurtis', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('anarkalikurtis', { product });
   } catch (error) {
     res.send(error)
@@ -209,7 +199,6 @@ router.get('/WomenEthnic/RayonKurtis', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('rayonkurtis', { product });
   } catch (error) {
     res.send(error)
@@ -226,7 +215,6 @@ router.get('/WomenEthnic/CottonKurtis', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('cottonkurtis', { product });
   } catch (error) {
     res.send(error)
@@ -243,7 +231,6 @@ router.get('/WomenEthnic/EmbroideredKurtis', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('embroideredkurtis', { product });
   } catch (error) {
     res.send(error)
@@ -263,7 +250,6 @@ router.get('/WomenEthnic/AllKurtaSets', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('allkurtasets', { product });
   } catch (error) {
     res.send(error)
@@ -283,7 +269,6 @@ router.get('/WomenEthnic/AllSuitsDressMaterial', async function(req, res, next) 
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('allsuitsdressmaterial', { product });
   } catch (error) {
     res.send(error)
@@ -300,7 +285,6 @@ router.get('/WomenEthnic/CottonSuits', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('cottonsuits', { product });
   } catch (error) {
     res.send(error)
@@ -317,7 +301,6 @@ router.get('/WomenEthnic/EmbroideredSuits', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('embroideredsuits', { product });
   } catch (error) {
     res.send(error)
@@ -334,7 +317,6 @@ router.get('/WomenEthnic/ChanderiSuits', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('chanderisuits', { product });
   } catch (error) {
     res.send(error)
@@ -355,7 +337,6 @@ router.get('/WomenEthnic/Blouses', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('blouses', { product });
   } catch (error) {
     res.send(error)
@@ -372,7 +353,6 @@ router.get('/WomenEthnic/Dupattas', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('dupattas', { product });
   } catch (error) {
     res.send(error)
@@ -389,7 +369,6 @@ router.get('/WomenEthnic/Lehanga', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('lehanga', { product });
   } catch (error) {
     res.send(error)
@@ -406,7 +385,6 @@ router.get('/WomenEthnic/Gown', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('gown', { product });
   } catch (error) {
     res.send(error)
@@ -423,7 +401,6 @@ router.get('/WomenEthnic/EthnicBottomwear', async function(req, res, next) {
         product.push(pro)
       }
     })
-    console.log(product)
     res.render('ethnicbottomwear', { product });
   } catch (error) {
     res.send(error)
