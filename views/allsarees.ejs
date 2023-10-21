@@ -1,8 +1,12 @@
 <%- include("code/header")%>
 <%- include("code/nav")%>
+
 <link rel="stylesheet" href="/stylesheets/product.css">
 
     <div class="product">
+        <% if(!product.lenght == 0){ %>
+            <h1 class="noproduct">! opps no product avalable 😔</h1>
+        <%}%>
     <% product.forEach(function(p){ %>
 
         <a href="/productdetails/<%= p._id%>">
@@ -26,5 +30,6 @@
     <% })%>
             
     </div>
+    <%- include("code/pagesfooter")%>
 
 <%- include("code/footer")%>

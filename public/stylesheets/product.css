@@ -4,6 +4,22 @@
     /* background-color: pink; */
     padding: 2vmax 7vmax;
 }
+.noproduct{
+    font-size: 3vmax;
+    width: fit-content;
+    margin: 14vmax auto;   
+    color: red;
+    /* border: 0.2vmax solid black; */
+    animation: noproduct 2s cubic-bezier(.17,.67,.92,-0.16) infinite alternate-reverse;
+    text-transform: uppercase;
+}
+@keyframes noproduct {
+    0%{
+        scale: 0.9;
+    }100%{
+        scale: 1.5;
+    }
+}
 .product-box{
     display: inline-block;
     /* display: flex; */

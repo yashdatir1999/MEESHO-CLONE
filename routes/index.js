@@ -45,105 +45,390 @@ router.get('/WomenEthnic/AllSarees', async function(req, res, next) {
   }
 });
 
-router.get('/WomenEthnic/SilkSarees', function(req, res, next) {
-  res.render('silksarees', { title: 'Express' });
+router.get('/WomenEthnic/SilkSarees', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "silksarees"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('silksarees', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/CottonSilkSarees', function(req, res, next) {
-  res.render('CottonSilkSarees', { title: 'Express' });
+router.get('/WomenEthnic/CottonSilkSarees', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "cottonsilksarees"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('cottonsilksarees', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/WomenEthnic/CottonSarees', function(req, res, next) {
-  res.render('CottonSarees', { title: 'Express' });
+router.get('/WomenEthnic/CottonSarees', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "cottonsarees"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('cottonsarees', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/GeorgetteSarees', function(req, res, next) {
-  res.render('GeorgetteSarees', { title: 'Express' });
+router.get('/WomenEthnic/GeorgetteSarees', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "georgettesarees"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('georgettesarees', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/ChiffonSarees', function(req, res, next) {
-  res.render('ChiffonSarees', { title: 'Express' });
+router.get('/WomenEthnic/ChiffonSarees', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "chiffonsarees"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('chiffonsarees', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/SatinSarees', function(req, res, next) {
-  res.render('SatinSarees', { title: 'Express' });
+router.get('/WomenEthnic/SatinSarees', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "satinsarees"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('satinsarees', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/EmbroideredSarees', function(req, res, next) {
-  res.render('EmbroideredSarees', { title: 'Express' });
+router.get('/WomenEthnic/EmbroideredSarees', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "embroideredsarees"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('embroideredsarees', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Women Ethnic (SAREES) ============== END
 //Women Ethnic (KURTIS) ============== START
 
-router.get('/WomenEthnic/AllKurtis', function(req, res, next) {
-  res.render('AllKurtis', { title: 'Express' });
+router.get('/WomenEthnic/AllKurtis', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "allkurtis"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('allkurtis', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/AnarkaliKurtis', function(req, res, next) {
-  res.render('AnarkaliKurtis', { title: 'Express' });
+router.get('/WomenEthnic/AnarkaliKurtis', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "anarkalikurtis"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('anarkalikurtis', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/RayonKurtis', function(req, res, next) {
-  res.render('RayonKurtis', { title: 'Express' });
+router.get('/WomenEthnic/RayonKurtis', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "rayonkurtis"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('rayonkurtis', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/CottonKurtis', function(req, res, next) {
-  res.render('CottonKurtis', { title: 'Express' });
+router.get('/WomenEthnic/CottonKurtis', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "cottonkurtis"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('cottonkurtis', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/EmbroideredKurtis', function(req, res, next) {
-  res.render('EmbroideredKurtis', { title: 'Express' });
+router.get('/WomenEthnic/EmbroideredKurtis', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "embroideredkurtis"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('embroideredkurtis', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Women Ethnic (KURTIS) ============== END
 //Women Ethnic (KURTA SETS) ============== START
 
-router.get('/WomenEthnic/AllKurtaSets', function(req, res, next) {
-  res.render('AllKurtaSets', { title: 'Express' });
+router.get('/WomenEthnic/AllKurtaSets', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "allkurtasets"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('allkurtasets', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Women Ethnic (KURTA SETS) ============== END
 //Women Ethnic (SUITS & DRESS MATERIAL) ============== START
 
-router.get('/WomenEthnic/AllSuitsDressMaterial', function(req, res, next) {
-  res.render('AllSuitsDressMaterial', { title: 'Express' });
+router.get('/WomenEthnic/AllSuitsDressMaterial', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "allsuitsdressmaterial"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('allsuitsdressmaterial', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/CottonSuits', function(req, res, next) {
-  res.render('CottonSuits', { title: 'Express' });
+router.get('/WomenEthnic/CottonSuits', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "cottonsuits"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('cottonsuits', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/EmbroideredSuits', function(req, res, next) {
-  res.render('EmbroideredSuits', { title: 'Express' });
+router.get('/WomenEthnic/EmbroideredSuits', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "embroideredsuits"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('embroideredsuits', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/ChanderiSuits', function(req, res, next) {
-  res.render('ChanderiSuits', { title: 'Express' });
+router.get('/WomenEthnic/ChanderiSuits', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "chanderisuits"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('chanderisuits', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Women Ethnic (SUITS & DRESS MATERIAL) ============== END
 
 //Women Ethnic (OTHER ETHNIC) ============== START
 
-router.get('/WomenEthnic/Blouses', function(req, res, next) {
-  res.render('Blouses', { title: 'Express' });
+router.get('/WomenEthnic/Blouses', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "blouses"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('blouses', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/Dupattas', function(req, res, next) {
-  res.render('Dupattas', { title: 'Express' });
+router.get('/WomenEthnic/Dupattas', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "dupattas"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('dupattas', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/Lehanga', function(req, res, next) {
-  res.render('Lehanga', { title: 'Express' });
+router.get('/WomenEthnic/Lehanga', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "lehanga"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('lehanga', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/Gown', function(req, res, next) {
-  res.render('Gown', { title: 'Express' });
+router.get('/WomenEthnic/Gown', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "gown"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('gown', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenEthnic/EthnicBottomwear', function(req, res, next) {
-  res.render('EthnicBottomwear', { title: 'Express' });
+router.get('/WomenEthnic/EthnicBottomwear', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "ethnicbottomwear"){
+        product.push(pro)
+      }
+    })
+    console.log(product)
+    res.render('ethnicbottomwear', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Women Ethnic (OTHER ETHNIC) ============== END
