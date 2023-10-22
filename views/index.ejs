@@ -88,6 +88,10 @@
         </a>
     </div>
 
+    <% if(product.length === 0){ %>
+        <h1 class="noproduct"> <span>! OOPS</span> <br> no product avalable</h1>
+    <%}%>
+
     <div class="product">
         
     <% product.forEach(function(p){ %>

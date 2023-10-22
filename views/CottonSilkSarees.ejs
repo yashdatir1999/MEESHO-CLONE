@@ -3,6 +3,10 @@
 <link rel="stylesheet" href="/stylesheets/product.css">
 <div class="product">
     
+    <% if(product.length === 0){ %>
+        <h1 class="noproduct"> <span>! OOPS</span> <br> no product avalable</h1>
+    <%}%>
+
 <% product.forEach(function(p){ %>
 
     <a href="/productdetails/<%= p._id%>">

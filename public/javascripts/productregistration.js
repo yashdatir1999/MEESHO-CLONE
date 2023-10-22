@@ -5,7 +5,7 @@ function populate(catagory , subcatagory){
     subcatagory.innerHTML="--PRODUCT SUB CATAGORY--"
     if(catagory.value === "womenethnic"){
         var optionarr = ['allSarees|ALL SAREES' , 
-        'silkSarees|SILK SAREES' ,
+        'silksarees|SILK SAREES' ,
         'cottonsilksarees|COTTON SILK SAREES' ,
         'cottonsarees|COTTON SAREES' ,
         'georgettesarees|GEORGETTE SAREES' ,

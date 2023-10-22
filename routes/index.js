@@ -1870,35 +1870,112 @@ router.get('/BagsFootwere/Juttis', async function(req, res, next) {
 //Electronics  ///============== START
 //Electronics (Mobile & Accessories) ============== END
 
-router.get('/Electronics/AllMobileAccessories', function(req, res, next) {
-  res.render('AllMobileAccessories');
+router.get('/Electronics/AllMobileAccessories', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "allmobileaccessories"){
+        product.push(pro)
+      }
+    })
+    res.render('allmobileaccessories', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/Electronics/Smartwatches', function(req, res, next) {
-  res.render('Smartwatches');
+router.get('/Electronics/Smartwatches', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "smartwatches"){
+        product.push(pro)
+      }
+    })
+    res.render('smartwatches', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/Electronics/MobileHolders', function(req, res, next) {
-  res.render('MobileHolders');
+router.get('/Electronics/MobileHolders', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "mobileholders"){
+        product.push(pro)
+      }
+    })
+    res.render('mobileholders', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/Electronics/Mobilecasesandcovers', function(req, res, next) {
-  res.render('Mobilecasesandcovers');
+router.get('/Electronics/Mobilecasesandcovers', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "mobilecasesandcovers"){
+        product.push(pro)
+      }
+    })
+    res.render('mobilecasesandcovers', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
 //Electronics (Mobile & Accessories) ============== END
 //Electronics (Appliances) ============== START
 
-router.get('/Electronics/AllAppliances', function(req, res, next) {
-  res.render('AllAppliances');
+router.get('/Electronics/AllAppliances', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "allappliances"){
+        product.push(pro)
+      }
+    })
+    res.render('allappliances', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/Electronics/Grooming', function(req, res, next) {
-  res.render('Grooming');
+router.get('/Electronics/Grooming', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "grooming"){
+        product.push(pro)
+      }
+    })
+    res.render('grooming', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/Electronics/HomeAppliances', function(req, res, next) {
-  res.render('HomeAppliances');
+router.get('/Electronics/HomeAppliances', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "homeappliances"){
+        product.push(pro)
+      }
+    })
+    res.render('homeappliances', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
 

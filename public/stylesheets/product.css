@@ -12,6 +12,10 @@
     /* border: 0.2vmax solid black; */
     animation: noproduct 2s cubic-bezier(.17,.67,.92,-0.16) infinite alternate-reverse;
     text-transform: uppercase;
+    text-align: center;
+}
+.noproduct >span{
+    font-size: 4vmax;
 }
 @keyframes noproduct {
     0%{
