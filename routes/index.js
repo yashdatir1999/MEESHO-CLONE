@@ -1460,59 +1460,202 @@ router.get('/BeautyHealth/Deodorants', async function(req, res, next) {
 //Jewellery & Accessories  ///============== START
 //Jewellery & Accessories (Jewellery) ============== START
 
-router.get('/JewelleryAccessories/JewellerySet', function(req, res, next) {
-  res.render('JewellerySet');
+router.get('/JewelleryAccessories/JewellerySet', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "jewelleryset"){
+        product.push(pro)
+      }
+    })
+    res.render('jewelleryset', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/JewelleryAccessories/Earrings', function(req, res, next) {
-  res.render('Earrings');
+router.get('/JewelleryAccessories/Earrings', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "earrings"){
+        product.push(pro)
+      }
+    })
+    res.render('earrings', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/JewelleryAccessories/Mangalsutras', function(req, res, next) {
-  res.render('Mangalsutras');
+router.get('/JewelleryAccessories/Mangalsutras', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "mangalsutras"){
+        product.push(pro)
+      }
+    })
+    res.render('mangalsutras', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/JewelleryAccessories/Studs', function(req, res, next) {
-  res.render('Studs');
+router.get('/JewelleryAccessories/Studs', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "studs"){
+        product.push(pro)
+      }
+    })
+    res.render('studs', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/JewelleryAccessories/Bangles', function(req, res, next) {
-  res.render('Bangles');
+router.get('/JewelleryAccessories/Bangles', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "bangles"){
+        product.push(pro)
+      }
+    })
+    res.render('bangles', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/JewelleryAccessories/Necklaces', function(req, res, next) {
-  res.render('Necklaces');
+router.get('/JewelleryAccessories/Necklaces', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "necklaces"){
+        product.push(pro)
+      }
+    })
+    res.render('necklaces', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/JewelleryAccessories/Rings', function(req, res, next) {
-  res.render('Rings');
+router.get('/JewelleryAccessories/Rings', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "rings"){
+        product.push(pro)
+      }
+    })
+    res.render('rings', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/JewelleryAccessories/Anklets', function(req, res, next) {
-  res.render('Anklets');
+router.get('/JewelleryAccessories/Anklets', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "anklets"){
+        product.push(pro)
+      }
+    })
+    res.render('anklets', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
 //Jewellery & Accessories (Jewellery) ============== START
 //Jewellery & Accessories (Women Accessory) ============== START
 
-router.get('/JewelleryAccessories/Bags', function(req, res, next) {
-  res.render('JBags');
+router.get('/JewelleryAccessories/Bags', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "jbags"){
+        product.push(pro)
+      }
+    })
+    res.render('Jbags', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/JewelleryAccessories/Watches', function(req, res, next) {
-  res.render('JWatches');
+router.get('/JewelleryAccessories/Watches', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "jwatches"){
+        product.push(pro)
+      }
+    })
+    res.render('Jwatches', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/JewelleryAccessories/HairAccessories', function(req, res, next) {
-  res.render('HairAccessories');
+router.get('/JewelleryAccessories/HairAccessories', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "hairaccessories"){
+        product.push(pro)
+      }
+    })
+    res.render('hairaccessories', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/JewelleryAccessories/Sunglasses', function(req, res, next) {
-  res.render('JSunglasses');
+router.get('/JewelleryAccessories/Sunglasses', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "jsunglasses"){
+        product.push(pro)
+      }
+    })
+    res.render('Jsunglasses', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/JewelleryAccessories/Socks', function(req, res, next) {
-  res.render('Socks');
+router.get('/JewelleryAccessories/Socks', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "socks"){
+        product.push(pro)
+      }
+    })
+    res.render('socks', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
 
@@ -1522,66 +1665,204 @@ router.get('/JewelleryAccessories/Socks', function(req, res, next) {
 //Bags & Footwere  ///============== START
 //Bags & Footwere (Women Bags) ============== START
 
-router.get('/BagsFootwere/AllWomenBags', function(req, res, next) {
-  res.render('AllWomenBags');
+router.get('/BagsFootwere/AllWomenBags', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "allwomenbags"){
+        product.push(pro)
+      }
+    })
+    res.render('allwomenbags', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/BagsFootwere/Handbags', function(req, res, next) {
-  res.render('Handbags');
-});
+router.get('/BagsFootwere/Handbags', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "handbags"){
+        product.push(pro)
+      }
+    })
+    res.render('handbags', { product });
+  } catch (error) {
+    res.send(error)
+  }});
 
-router.get('/BagsFootwere/Clutches', function(req, res, next) {
-  res.render('Clutches');
-});
+router.get('/BagsFootwere/Clutches', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "clutches"){
+        product.push(pro)
+      }
+    })
+    res.render('clutches', { product });
+  } catch (error) {
+    res.send(error)
+  }});
 
-router.get('/BagsFootwere/Slingbags', function(req, res, next) {
-  res.render('Slingbags');
+router.get('/BagsFootwere/Slingbags', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "slingbags"){
+        product.push(pro)
+      }
+    })
+    res.render('slingbags', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
 //Bags & Footwere (Women Bags) ============== END
 //Bags & Footwere (Men Bags) ============== START
 
-router.get('/BagsFootwere/AllMenBags', function(req, res, next) {
-  res.render('AllMenBags');
+router.get('/BagsFootwere/AllMenBags', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "allmenbags"){
+        product.push(pro)
+      }
+    })
+    res.render('allmenbags', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/BagsFootwere/MenWallets', function(req, res, next) {
-  res.render('MenWallets');
+router.get('/BagsFootwere/MenWallets', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "menwallets"){
+        product.push(pro)
+      }
+    })
+    res.render('menwallets', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
 //Bags & Footwere (Men Bags) ============== END
 //Bags & Footwere (Men Footwear) ============== START
 
-router.get('/BagsFootwere/SportsShoes', function(req, res, next) {
-  res.render('BSportsShoes');
+router.get('/BagsFootwere/SportsShoes', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "bsportsshoes"){
+        product.push(pro)
+      }
+    })
+    res.render('bsportsshoes', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/BagsFootwere/CasualShoes', function(req, res, next) {
-  res.render('BCasualShoes');
+router.get('/BagsFootwere/CasualShoes', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "bcasualshoes"){
+        product.push(pro)
+      }
+    })
+    res.render('bcasualshoes', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/BagsFootwere/FormalShoes', function(req, res, next) {
-  res.render('BFormalShoes');
-});
+router.get('/BagsFootwere/FormalShoes', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "bformalshoes"){
+        product.push(pro)
+      }
+    })
+    res.render('bformalshoes', { product });
+  } catch (error) {
+    res.send(error)
+  }});
 
-router.get('/BagsFootwere/Sandals', function(req, res, next) {
-  res.render('BSandals');
-});
+router.get('/BagsFootwere/Sandals', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "bsandals"){
+        product.push(pro)
+      }
+    })
+    res.render('bsandals', { product });
+  } catch (error) {
+    res.send(error)
+  }});
 
 //Bags & Footwere (Men Footwear) ============== END
 //Bags & Footwere (Women Footwear) ============== START
 
-router.get('/BagsFootwere/Flats', function(req, res, next) {
-  res.render('Flats');
+router.get('/BagsFootwere/Flats', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "flats"){
+        product.push(pro)
+      }
+    })
+    res.render('flats', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/BagsFootwere/Bellies', function(req, res, next) {
-  res.render('Bellies');
+router.get('/BagsFootwere/Bellies', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "bellies"){
+        product.push(pro)
+      }
+    })
+    res.render('bellies', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/BagsFootwere/Juttis', function(req, res, next) {
-  res.render('Juttis');
-});
+router.get('/BagsFootwere/Juttis', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "juttis"){
+        product.push(pro)
+      }
+    })
+    res.render('juttis', { product });
+  } catch (error) {
+    res.send(error)
+  }});
 
 //Bags & Footwere (Women Footwear) ============== END
 //Bags & Footwere  ///============== END

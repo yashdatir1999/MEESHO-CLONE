@@ -113,10 +113,10 @@ function populate(catagory , subcatagory){
             'necklaces|NECKLACES',
             'rings|RINGS',
             'anklets|ANKLETS',
-            'bags|BAGS',
-            'watches|WATCHES',
+            'jbags|BAGS',
+            'jwatches|WATCHES',
             'hairaccessories|HAIR ACCESSORIES',
-            'sunglasses|SUNGLASSES',
+            'jsunglasses|SUNGLASSES',
             'socks|SOCKS'
         ]
     }else if(catagory.value === "bagsfootwere"){
@@ -127,10 +127,10 @@ function populate(catagory , subcatagory){
             'slingbags|SLINGBAGS',
             'allmenbags|ALL MEN BAGS',
             'menwallets|MEN WALLETS',
-            'sportsshoes|SPORTS SHOES',
-            'casualshoes|CASUAL SHOES',
-            'formalshoes|FORMAL SHOES',
-            'sandals|SANDALS',
+            'bsportsshoes|SPORTS SHOES',
+            'bcasualshoes|CASUAL SHOES',
+            'bformalshoes|FORMAL SHOES',
+            'bsandals|SANDALS',
             'flats|FLATS',
             'bellies|BELLIES',
             'juttis|JUTTIS'
