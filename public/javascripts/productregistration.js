@@ -38,7 +38,6 @@ function populate(catagory , subcatagory){
             'palazzos|PALAZZOS',
             'shorts|SHORTS',
             'skirts|SKIRTS',
-            'innerwear|INNERWEAR',
             'bra|BRA',
             'briefs|BRIEFS',
             'nightsuits|NIGHTSUITS',

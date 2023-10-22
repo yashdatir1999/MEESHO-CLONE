@@ -1,6 +1,32 @@
 <%- include("code/header")%>
 <%- include("code/nav")%>
 
-<h1>Watches</h1>
+<link rel="stylesheet" href="/stylesheets/product.css">
 
+    <div class="product">
+       
+    <% product.forEach(function(p){ %>
+
+        <a href="/productdetails/<%= p._id%>">
+
+
+            <div class="product-box">
+                <div class="product-box-img"><img src="<%= p.imglink1%>" alt=""></div>
+                <div class="product-box-name">
+                    <h3><%= p.productname%></h3>
+
+                </div>
+                <h2>₹ <%= p.productprice%> <span>onwards</span></h2>
+                <h5>₹ <%= p.deliverycharges%> delevery charges</h5>
+                <h5> <span> <%= p.rating%> <i class="ri-star-s-fill"></i> </span> reviews</h5>
+            </div>
+            
+
+
+        </a>
+
+    <% })%>
+            
+    </div>
+    <%- include("code/pagesfooter")%>
 <%- include("code/footer")%>

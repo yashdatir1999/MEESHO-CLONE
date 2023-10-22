@@ -414,65 +414,220 @@ router.get('/WomenEthnic/EthnicBottomwear', async function(req, res, next) {
 //Women Western  ///============== START
 //Women Western (TOPWERE) ============== START
 
-router.get('/WomenWestern/Tops', function(req, res, next) {
-  res.render('Tops');
+router.get('/WomenWestern/Tops', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "tops"){
+        product.push(pro)
+      }
+    })
+    res.render('tops', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/WomenWestern/Dresses', function(req, res, next) {
-  res.render('Dresses');
+router.get('/WomenWestern/Dresses', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "dresses"){
+        product.push(pro)
+      }
+    })
+    res.render('dresses', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenWestern/Sweaters', function(req, res, next) {
-  res.render('Sweaters');
+router.get('/WomenWestern/Sweaters', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "sweaters"){
+        product.push(pro)
+      }
+    })
+    res.render('sweaters', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenWestern/Jumpsuits', function(req, res, next) {
-  res.render('Jumpsuits');
+router.get('/WomenWestern/Jumpsuits', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "jumpsuits"){
+        product.push(pro)
+      }
+    })
+    res.render('jumpsuits', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Women Ethnic (TOPWERE) ============== END
 //Women Ethnic (BOTTOM WERE) ============== START
 
-router.get('/WomenWestern/Jeans', function(req, res, next) {
-  res.render('Jeans');
+router.get('/WomenWestern/Jeans', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "jeans"){
+        product.push(pro)
+      }
+    })
+    res.render('jeans', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenWestern/Jeggings', function(req, res, next) {
-  res.render('Jeggings');
+router.get('/WomenWestern/Jeggings', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "jeggings"){
+        product.push(pro)
+      }
+    })
+    res.render('jeggings', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenWestern/Palazzos', function(req, res, next) {
-  res.render('Palazzos');
+router.get('/WomenWestern/Palazzos', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "palazzos"){
+        product.push(pro)
+      }
+    })
+    res.render('palazzos', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenWestern/Shorts', function(req, res, next) {
-  res.render('Shorts');
+router.get('/WomenWestern/Shorts', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "shorts"){
+        product.push(pro)
+      }
+    })
+    res.render('shorts', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenWestern/Skirts', function(req, res, next) {
-  res.render('Skirts');
+router.get('/WomenWestern/Skirts', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "skirts"){
+        product.push(pro)
+      }
+    })
+    res.render('skirts', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Women Ethnic (BOTTOM WERE) ============== END
 //Women Ethnic (INNERWERE) ============== START
 
-router.get('/WomenWestern/Bra', function(req, res, next) {
-  res.render('Bra');
+router.get('/WomenWestern/Bra', async function(req, res, next) {
+var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "bra"){
+        product.push(pro)
+      }
+    })
+    res.render('bra', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenWestern/Briefs', function(req, res, next) {
-  res.render('Briefs');
+router.get('/WomenWestern/Briefs', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "briefs"){
+        product.push(pro)
+      }
+    })
+    res.render('briefs', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Women Ethnic (INNERWERE) ============== END
 //Women Ethnic (SLEEPWERE) ============== START
 
-router.get('/WomenWestern/Nightsuits', function(req, res, next) {
-  res.render('Nightsuits');
+router.get('/WomenWestern/Nightsuits', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "nightsuits"){
+        product.push(pro)
+      }
+    })
+    res.render('nightsuits', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/WomenWestern/Babydolls', function(req, res, next) {
-  res.render('Babydolls');
+router.get('/WomenWestern/Babydolls', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "babydolls"){
+        product.push(pro)
+      }
+    })
+    res.render('babydolls', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Women Ethnic (SLEEPWERE) ============== END
@@ -481,103 +636,354 @@ router.get('/WomenWestern/Babydolls', function(req, res, next) {
 //Men  ///============== START
 //Men (TOP WERE) ============== START
 
-router.get('/Men/AllTopWear', function(req, res, next) {
-  res.render('AllTopWear');
+router.get('/Men/AllTopWear', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "alltopwear"){
+        product.push(pro)
+      }
+    })
+    res.render('alltopwear', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/Tshirts', function(req, res, next) {
-  res.render('Tshirts');
+router.get('/Men/Tshirts', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "tshirts"){
+        product.push(pro)
+      }
+    })
+    res.render('tshirts', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/Shirts', function(req, res, next) {
-  res.render('Shirts');
+router.get('/Men/Shirts', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "shirts"){
+        product.push(pro)
+      }
+    })
+    res.render('shirts', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Men (TOP WERE) ============== END
 //Men (BOTTOM WERE) ============== START
 
-router.get('/Men/TrackPants', function(req, res, next) {
-  res.render('TrackPants');
+router.get('/Men/TrackPants', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "trackpants"){
+        product.push(pro)
+      }
+    })
+    res.render('trackpants', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/Jeans', function(req, res, next) {
-  res.render('MJeans');
+router.get('/Men/Jeans', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "silksarees"){
+        product.push(pro)
+      }
+    })
+    res.render('Mjeans', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/Trousers', function(req, res, next) {
-  res.render('Trousers');
+router.get('/Men/Trousers', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "trousers"){
+        product.push(pro)
+      }
+    })
+    res.render('trousers', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Men (BOTTOM WERE) ============== END
 //Men (Men Accessories) ============== START
 
-router.get('/Men/AllMenAccessories', function(req, res, next) {
-  res.render('AllMenAccessories');
+router.get('/Men/AllMenAccessories', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "allmenaccessories"){
+        product.push(pro)
+      }
+    })
+    res.render('allmenaccessories', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/Watches', function(req, res, next) {
-  res.render('Watches');
+router.get('/Men/Watches', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "watches"){
+        product.push(pro)
+      }
+    })
+    res.render('watches', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/Belts', function(req, res, next) {
-  res.render('Belts');
+router.get('/Men/Belts', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "belts"){
+        product.push(pro)
+      }
+    })
+    res.render('belts', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/Men/Wallets', function(req, res, next) {
-  res.render('Wallets');
+router.get('/Men/Wallets', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "wallets"){
+        product.push(pro)
+      }
+    })
+    res.render('wallets', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/Jewellery', function(req, res, next) {
-  res.render('Jewellery');
+router.get('/Men/Jewellery', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "jewellery"){
+        product.push(pro)
+      }
+    })
+    res.render('jewellery', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/Sunglasses', function(req, res, next) {
-  res.render('Sunglasses');
+router.get('/Men/Sunglasses', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "sunglasses"){
+        product.push(pro)
+      }
+    })
+    res.render('sunglasses', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/Bags', function(req, res, next) {
-  res.render('Bags');
+router.get('/Men/Bags', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "bags"){
+        product.push(pro)
+      }
+    })
+    res.render('bags', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Men (Men Accessories) ============== END
 //Men (Men Footwere) ============== START
 
-router.get('/Men/CasualShoes', function(req, res, next) {
-  res.render('CasualShoes');
+router.get('/Men/CasualShoes', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "casualshoes"){
+        product.push(pro)
+      }
+    })
+    res.render('casualshoes', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/SportsShoes', function(req, res, next) {
-  res.render('SportsShoes');
+router.get('/Men/SportsShoes', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "sportsshoes"){
+        product.push(pro)
+      }
+    })
+    res.render('sportsshoes', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/Sandals', function(req, res, next) {
-  res.render('Sandals');
+router.get('/Men/Sandals', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "sandals"){
+        product.push(pro)
+      }
+    })
+    res.render('sandals', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/FormalShoes', function(req, res, next) {
-  res.render('FormalShoes');
+router.get('/Men/FormalShoes', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "formalshoes"){
+        product.push(pro)
+      }
+    })
+    res.render('formalshoes', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Men (Men Footwere) ============== END
 //Men (Ethnic Wear) ============== START
 
-router.get('/Men/MenKurtas', function(req, res, next) {
-  res.render('MenKurtas');
+router.get('/Men/MenKurtas', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "menkurtas"){
+        product.push(pro)
+      }
+    })
+    res.render('menkurtas', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/EthnicJackets', function(req, res, next) {
-  res.render('EthnicJackets');
+router.get('/Men/EthnicJackets', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "ethnicjackets"){
+        product.push(pro)
+      }
+    })
+    res.render('ethnicjackets', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Men (Ethnic Wear) ============== END
 //Men (Inner & Sleep Wear) ============== START
 
-router.get('/Men/AllInnerSleepWear', function(req, res, next) {
-  res.render('AllInnerSleepWear');
+router.get('/Men/AllInnerSleepWear', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "allinnersleepwear"){
+        product.push(pro)
+      }
+    })
+    res.render('allinnersleepwear', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Men/Vests', function(req, res, next) {
-  res.render('Vests');
+router.get('/Men/Vests', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "vests"){
+        product.push(pro)
+      }
+    })
+    res.render('vests', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Men (Inner & Sleep Wear) ============== END
@@ -585,45 +991,141 @@ router.get('/Men/Vests', function(req, res, next) {
 //Kids  ///============== START
 //Kids (Boys & Girls 2+ Years) ============== START
 
-router.get('/Kids/Dresses', function(req, res, next) {
-  res.render('KDresses');
+router.get('/Kids/Dresses', async function(req, res, next) {
+var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "dresses"){
+        product.push(pro)
+      }
+    })
+    res.render('Kdresses', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Kids (Boys & Girls 2+ Years) ============== END
 //Kids (Infant 0-2 Years) ============== START
 
-router.get('/Kids/Rompers', function(req, res, next) {
-  res.render('Rompers');
+router.get('/Kids/Rompers', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "rompers"){
+        product.push(pro)
+      }
+    })
+    res.render('rompers', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Kids (Infant 0-2 Years) ============== END
 //Kids (Toys & Accessories) ============== START
 
-router.get('/Kids/SoftToys', function(req, res, next) {
-  res.render('SoftToys');
+router.get('/Kids/SoftToys', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "softtoys"){
+        product.push(pro)
+      }
+    })
+    res.render('softtoys', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Kids/Footwear', function(req, res, next) {
-  res.render('Footwear');
+router.get('/Kids/Footwear', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "footwear"){
+        product.push(pro)
+      }
+    })
+    res.render('footwear', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Kids/Stationery', function(req, res, next) {
-  res.render('Stationery');
+router.get('/Kids/Stationery', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "stationery"){
+        product.push(pro)
+      }
+    })
+    res.render('stationery', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Kids/Watches', function(req, res, next) {
-  res.render('KWatches');
+router.get('/Kids/Watches', async function(req, res, next) {
+var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "watches"){
+        product.push(pro)
+      }
+    })
+    res.render('Kwatches', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/Kids/BagsBackpacks', function(req, res, next) {
-  res.render('BagsBackpacks');
+router.get('/Kids/BagsBackpacks', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "bagsbackpacks"){
+        product.push(pro)
+      }
+    })
+    res.render('bagsbackpacks', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Kids (Toys & Accessories) ============== END
 //Kids (Baby Care) ============== START
 
-router.get('/Kids/AllBabyCare', function(req, res, next) {
-  res.render('AllBabyCare');
+router.get('/Kids/AllBabyCare', async function(req, res, next) {
+var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "allbabycare"){
+        product.push(pro)
+      }
+    })
+    res.render('allbabycare', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Kids (Baby Care) ============== END
@@ -631,53 +1133,185 @@ router.get('/Kids/AllBabyCare', function(req, res, next) {
 //Home & Kitchen  ///============== START
 //Home & Kitchen (Home Furnishing) ============== START
 
-router.get('/HomeKitchen/Bedsheets', function(req, res, next) {
-  res.render('Bedsheets');
+router.get('/HomeKitchen/Bedsheets', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "bedsheets"){
+        product.push(pro)
+      }
+    })
+    res.render('bedsheets', { product });
+  } catch (error) {
+    res.send(error)
+  }
 });
 
-router.get('/HomeKitchen/Doormats', function(req, res, next) {
-  res.render('Doormats');
+router.get('/HomeKitchen/Doormats', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "doormats"){
+        product.push(pro)
+      }
+    })
+    res.render('doormats', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/HomeKitchen/CurtainsSheers', function(req, res, next) {
-  res.render('CurtainsSheers');
+router.get('/HomeKitchen/CurtainsSheers', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "curtainssheers"){
+        product.push(pro)
+      }
+    })
+    res.render('curtainssheers', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/HomeKitchen/CushionsCushionCovers', function(req, res, next) {
-  res.render('CushionsCushionCovers');
+router.get('/HomeKitchen/CushionsCushionCovers', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "cushionscushioncovers"){
+        product.push(pro)
+      }
+    })
+    res.render('cushionscushioncovers', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/HomeKitchen/MattressProtectors', function(req, res, next) {
-  res.render('MattressProtectors');
+router.get('/HomeKitchen/MattressProtectors', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "mattressprotectors"){
+        product.push(pro)
+      }
+    })
+    res.render('mattressprotectors', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
+
 //Home & Kitchen (Home Furnishing) ============== END
 //Home & Kitchen (Home Decor) ============== START
 
-router.get('/HomeKitchen/AllHomeDecor', function(req, res, next) {
-  res.render('AllHomeDecor');
+router.get('/HomeKitchen/AllHomeDecor', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "allhomedecor"){
+        product.push(pro)
+      }
+    })
+    res.render('allhomedecor', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/HomeKitchen/Stickers', function(req, res, next) {
-  res.render('Stickers');
+router.get('/HomeKitchen/Stickers', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "stickers"){
+        product.push(pro)
+      }
+    })
+    res.render('stickers', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/HomeKitchen/Clocks', function(req, res, next) {
-  res.render('Clocks');
+router.get('/HomeKitchen/Clocks', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "clocks"){
+        product.push(pro)
+      }
+    })
+    res.render('clocks', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/HomeKitchen/Showpieces', function(req, res, next) {
-  res.render('Showpieces');
+router.get('/HomeKitchen/Showpieces', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "showpieces"){
+        product.push(pro)
+      }
+    })
+    res.render('showpieces', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Home & Kitchen (Home Decor) ============== END
 //Home & Kitchen (Kitchen & Dining) ============== START
 
-router.get('/HomeKitchen/KitchenStorage', function(req, res, next) {
-  res.render('KitchenStorage');
+router.get('/HomeKitchen/KitchenStorage', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "kitchenstorage"){
+        product.push(pro)
+      }
+    })
+    res.render('kitchenstorage', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/HomeKitchen/CookwareBakeware', function(req, res, next) {
-  res.render('CookwareBakeware');
+router.get('/HomeKitchen/CookwareBakeware', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "cookwarebakeware"){
+        product.push(pro)
+      }
+    })
+    res.render('cookwarebakeware', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Home & Kitchen (Kitchen & Dining) ============== END
@@ -686,42 +1320,138 @@ router.get('/HomeKitchen/CookwareBakeware', function(req, res, next) {
 //Beauty & Health  ///============== START
 //Beauty & Health (Make up) ============== START
 
-router.get('/BeautyHealth/Face', function(req, res, next) {
-  res.render('Face');
+router.get('/BeautyHealth/Face', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "face"){
+        product.push(pro)
+      }
+    })
+    res.render('face', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/BeautyHealth/Eyes', function(req, res, next) {
-  res.render('Eyes');
+router.get('/BeautyHealth/Eyes', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "eyes"){
+        product.push(pro)
+      }
+    })
+    res.render('eyes', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/BeautyHealth/Lips', function(req, res, next) {
-  res.render('Lips');
+router.get('/BeautyHealth/Lips', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "lips"){
+        product.push(pro)
+      }
+    })
+    res.render('lips', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/BeautyHealth/Nails', function(req, res, next) {
-  res.render('Nails');
+router.get('/BeautyHealth/Nails', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "nails"){
+        product.push(pro)
+      }
+    })
+    res.render('nails', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Beauty & Health (Make up) ============== END
 //Beauty & Health (Wellness) ============== 
 
-router.get('/BeautyHealth/Sanitizers', function(req, res, next) {
-  res.render('Sanitizers');
+router.get('/BeautyHealth/Sanitizers', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "sanitizers"){
+        product.push(pro)
+      }
+    })
+    res.render('sanitizers', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/BeautyHealth/OralCare', function(req, res, next) {
-  res.render('OralCare');
+router.get('/BeautyHealth/OralCare', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "oralcare"){
+        product.push(pro)
+      }
+    })
+    res.render('oralcare', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
-router.get('/BeautyHealth/FeminineHygiene', function(req, res, next) {
-  res.render('FeminineHygiene');
+router.get('/BeautyHealth/FeminineHygiene', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "femininehygiene"){
+        product.push(pro)
+      }
+    })
+    res.render('femininehygiene', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Beauty & Health (Wellness) ============== END
 //Beauty & Health (Skincare) ============== START
 
-router.get('/BeautyHealth/Deodorants', function(req, res, next) {
-  res.render('Deodorants');
+router.get('/BeautyHealth/Deodorants', async function(req, res, next) {
+  var product=[]
+  try {
+    const allproduct = await DATABASE.find()
+    allproduct.forEach(function(pro){
+      if(pro.subcatagory == "deodorants"){
+        product.push(pro)
+      }
+    })
+    res.render('deodorants', { product });
+  } catch (error) {
+    res.send(error)
+  }
+
 });
 
 //Beauty & Health (Skincare) ============== END
