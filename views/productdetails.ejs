@@ -13,17 +13,31 @@
                         <div class="product-img4"><img src="<%= product.imglink4%>" alt=""></div>
                     </div>
                     <div class="productdetails-left-bigimages">
-                        <img src="<%= product.imglink1%>" alt="">
+                        <img class="bigimg1" src="<%= product.imglink1%>" alt="">
+                        <img class="bigimg2" src="<%= product.imglink2%>" alt="">
+                        <img class="bigimg3" src="<%= product.imglink3%>" alt="">
+                        <img class="bigimg4" src="<%= product.imglink4%>" alt="">
                     </div>
                 </div>
-                    <a class="addcart" href=""><i class="ri-shopping-cart-2-line"></i> Add to Cart</a>
-                    <a class="buynow" href=""><i class="ri-arrow-right-double-line"></i> Buy Now</a>
+                <a class="addcart" href="/buybtn/<%= product._id%>"><i class="ri-shopping-cart-2-line"></i> Add to Cart</a>
+
+                <a class="buynow" href="/buybtn/<%= product._id%>"><i class="ri-arrow-right-double-line"></i> Buy Now</a>
             </div>
             <div class="productdetails-right">
-                <h2><%= product.productname%></h2>
-                <h1>₹ <%= product.productprice%></h1>
-                <h5> <span> <%= product.rating%> <i class="ri-star-s-fill"></i> </span> <%= product.rating%> Rating</h5>
-                <h6><%= product.deliverycharges%> Delivery Charges</h6>
+                <h2>
+                    <%= product.productname%>
+                </h2>
+                <h1>
+                    ₹ <%= product.productprice%>
+                </h1>
+                <h5> <span>
+                        <%= product.rating%> <i class="ri-star-s-fill"></i>
+                    </span>
+                    <%= product.reviews%> Reviews
+                </h5>
+                <h6>
+                    ₹ <%= product.deliverycharges%> Delivery Charges
+                </h6>
 
                 <h3>Product Details</h3>
                 <p>
@@ -34,11 +48,13 @@
                 <div class="soldby">
                     <img src="https://images.meesho.com/images/pow/shop_100.webp" alt="">
                     <%= product.soldby%>
-                    <button>View Shop</button>
+                        <button>View Shop</button>
                 </div>
                 <div class="soldby-details">
                     <h2>
-                        <span> <%= product.rating%><i class="ri-star-s-fill"></i></span><br>
+                        <span>
+                            <%= product.rating%><i class="ri-star-s-fill"></i>
+                        </span><br>
                         <%= product.reviews%>
                     </h2>
                     <h2>
@@ -46,12 +62,14 @@
                         Followers
                     </h2>
                     <h2>
-                        <span><%= product.availablequantity%></span><br>
+                        <span>
+                            <%= product.availablequantity%>
+                        </span><br>
                         Products
                     </h2>
                 </div>
                 <div class="check">
-                    <h2 >Check Delivery Date</h2>
+                    <h2>Check Delivery Date</h2>
                     <input type="text" placeholder="Enter Delivery Pincode">
                     <h3> <i class="ri-roadster-fill"></i> Enter Pincode for Estimated Delivery Date</h3>
                     <h3> <i class="ri-briefcase-2-line"></i> Dispatch in 2 day</h3>
@@ -61,4 +79,6 @@
 
 
         <script src="/javascripts/productdetails.js"></script>
-        <%- include("code/footer")%>
+
+        <%- include("code/pagesfooter")%>
+            <%- include("code/footer")%>

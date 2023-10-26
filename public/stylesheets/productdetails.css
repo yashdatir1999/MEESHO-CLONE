@@ -33,11 +33,16 @@
     overflow: hidden;
     box-shadow: 0 0 0.3vmax black;
     border-radius: 0.7vmax;
+    
 }
 .product-img1 >img ,.product-img2 >img,.product-img3 >img,.product-img4 >img{
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+.bigimg2 , .bigimg3 ,.bigimg4{
+    display: none;
+    
 }
 .productdetails-left-bigimages{
     height: 80vh;
@@ -45,6 +50,7 @@
     overflow: hidden;
     /* background-color: orange; */
     border-radius: 0.7vmax;
+    
 }
 .productdetails-left-bigimages >img{
     object-fit: cover;

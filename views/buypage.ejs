@@ -1,0 +1,81 @@
+<%- include("code/header")%>
+
+<link rel="stylesheet" href="/stylesheets/buypage.css">
+
+<div class="buypage">
+    <nav>
+        <h2><a href="/">meesho</a></h2>
+        <div class="preview-payment">
+            <div class="left">
+                <h3><span>1</span> <br> Review</h3>
+            </div>
+            <hr>
+            <div class="right">
+                <h3><span>2</span> <br> Payment</h3>
+            </div>
+        </div>
+    </nav>
+    <div class="buypage-contener">
+        <div class="buypage-contener-left">
+            <div class="buypage-contener-left-top">
+
+            
+            <h2><i class="ri-caravan-line"></i> Estimated Delivery by Upcoming Monday</h2>
+            <hr>
+            <div class="buy-product-details">
+                <div class="buy-product-details-left">
+                    <div class="buy-product-image">
+                        <img src="<%= product.imglink1%>" alt="">
+                    </div>
+                </div>
+                <div class="buy-product-details-right">
+                    <h3><%= product.productname%></h3>
+                    <h3>₹ <%= product.productprice%></h3>
+                    <h3>All issue easy returns allowed</h3>
+                    <hr>
+                    <div class="sold-delivery">
+                        <h3>Sold by : <%= product.soldby%> </h3>
+                        <h3>Delivery Fee ₹ <%= product.deliverycharges%></h3>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+            <h1><i class="ri-map-pin-line"></i> Delivery Address</h1>
+            
+            <div class="buypage-contener-left-buttom">
+                <form action="/buyform" method="post">
+                    <input type="text" name="custumername" placeholder="Enter Buyer Name:" id="">
+                    <input type="number" name="custumermob" placeholder="Enter Buyer Mob No: " id="">
+                    <input type="email" name="custumeremail" placeholder="Enter Buyer E-mail:" id="">
+                    <textarea name="custumeraddress" placeholder="Enter Delivery Address " id="" cols="30" rows="10"></textarea>
+                    <button>ORDER NOW</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="buypage-contener-right">
+            <h3>Price Details</h3>
+            <div class="toptal-product-price">
+                <h4>Total Product Price </h4>
+                <h4>₹ <%= product.productprice%></h4>
+            </div>
+            <div class="additional-fee">
+                <h4>Additional Fees </h4>
+                <h4>₹ <%= product.deliverycharges%></h4>
+            </div>
+            <hr>
+            <div class="total-order">
+                <h1>Order Total </h1>
+                <h1>₹ <%= totalprice%></h1>
+            </div>
+            <p>Clicking on ‘Continue’ will not deduct any money</p>
+
+            <img src="https://images.meesho.com/images/marketing/1588578650850.webp" alt="">
+        </div>
+    </div>
+</div>
+
+
+<%- include("code/footer")%>

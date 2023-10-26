@@ -2,7 +2,13 @@ var express = require('express');
 var router = express.Router();
 const countrylist = require("country-list")
 const DATABASE = require("../module/usermodel")
+const nodemailer = require("nodemailer")
+var totalprice 
+var productname
 
+function orderid(){
+  return Math.floor(Math.random()*10000000000000)
+}
 const productlist = [
   {product: "WomenEthnic"},
   {product: "WomenWestern"},
@@ -2072,11 +2078,99 @@ router.get('/startselling', function(req, res, next) {
 router.get('/productdetails/:pro', async function(req, res, next) {
   try {
     var product = await DATABASE.findById(req.params.pro)
-    console.log(product)
+    
     res.render("productdetails" , {product} )
   } catch (error) {
     res.send(error.message)
   }
 });
+
+router.get('/buybtn/:buyid', async function(req, res, next) {
+  try {
+    var product = await DATABASE.findById(req.params.buyid)
+    totalprice = product.productprice + product.deliverycharges
+    productname = product.productname
+    res.render("buypage" , {product , totalprice} )
+  } catch (error) {
+    res.send(error.message)
+  }
+
+});
+
+// E-mail===============
+
+router.post('/buyform', function(req, res, next) {
+
+  const orderID = orderid()
+// admin mail address, which is going to be the sender
+const transport = nodemailer.createTransport({
+  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 465,
+  auth: {
+      user: "yashdatir1999@gmail.com",
+      pass: "ndrh kqpa pxvt sogm",
+  },
+});
+
+// receiver mailing info
+const mailOptions = {
+  from: "Meesho Pvt. Ltd.<meesho@gmail.com>",
+  to: req.body.custumeremail,
+  subject: `Order Confirmation - Meesho Order #${orderID} `,
+  html: `<h1> Dear ${req.body.custumername} </h1>,
+
+  We hope this email finds you well. We are delighted to inform you that your order with Meesho has been successfully confirmed, and we are excited to provide you with the details you need to track your order's progress.
+  <br><br>
+  Order Details:
+  <br><br>
+  Order Number: #${orderID}
+  <br>
+  Product Name: ${productname}
+  <br>
+  Order Amount: ₹ ${totalprice}
+  <br>
+  Tracking ID: ${orderid()}
+  <br>
+  Customer Address: ${req.body.custumeraddress}
+  <br><br>
+  Your order is now being processed, and our team is diligently working to ensure a smooth and timely delivery to your provided address. To help you keep track of your order, please use the provided tracking ID when checking the status of your package.
+  <br><br>
+  If you have any questions or require assistance regarding your order, tracking, or any other matter related to your purchase, please do not hesitate to reach out to our dedicated customer support team. You can contact them by:
+  <br><br>
+  Email: meeshooclone@gmail.com
+  <br>
+  Phone: 0755-3189303
+  <br><br>
+  We truly appreciate your business and trust in Meesho. Our commitment is to provide you with a seamless shopping experience, from order placement to delivery.
+  <br><br>
+  Thank you for choosing Meesho. We look forward to serving you, and we are confident that you will be satisfied with your purchase.
+  <br><br><br>
+  Warm regards,
+  <br><br>
+  MEESHO
+  Online Shopping Site for Fashion, Electronics, Home & More | Meesho
+  <br><br>
+  Meesho Customer Service Team
+  meeshooclone@gmail.com
+  <br>
+  0755-3189303 
+  </h1>`,
+};
+
+// actual object which intregrate all info and send mail
+transport.sendMail(mailOptions, (err, info) => {
+  if (err) return res.send(err);
+  console.log(info);
+  return res.send(
+      "<h1 style='text-align:center;color: tomato; margin-top:10%'><span style='font-size:60px;'>✔️</span> <br />Email Sent! Check your inbox , <br/>check spam in case not found in inbox.</h1>"
+  );
+});
+
+
+
+    
+});
+
 
 module.exports = router;
