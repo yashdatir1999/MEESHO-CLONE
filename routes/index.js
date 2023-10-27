@@ -2162,9 +2162,7 @@ const mailOptions = {
 transport.sendMail(mailOptions, (err, info) => {
   if (err) return res.send(err);
   console.log(info);
-  return res.send(
-      "<h1 style='text-align:center;color: tomato; margin-top:10%'><span style='font-size:60px;'>✔️</span> <br />Email Sent! Check your inbox , <br/>check spam in case not found in inbox.</h1>"
-  );
+  return res.render("congrats") 
 });
 
 
@@ -2174,3 +2172,8 @@ transport.sendMail(mailOptions, (err, info) => {
 
 
 module.exports = router;
+
+
+// res.send(
+//   "<h1 style='text-align:center;color: tomato; margin-top:10%'><span style='font-size:60px;'>✔️</span> <br />Email Sent! Check your inbox , <br/>check spam in case not found in inbox.</h1>"
+// );

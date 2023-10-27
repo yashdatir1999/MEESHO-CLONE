@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.congrats{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.congrats >img{
+    height: 80%;
+    width: 80%;
+}
+.congrats >h1{
+    position: absolute;
+    bottom: 15%;
+    right: 7%;
+    text-transform: uppercase;
+    font-size: 1.3vmax;
+}
+.congrats > h1 >a{
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    padding: 1vmax 1.5vmax;
+    border-radius: 0.5vmax;
+    font-weight: 700;
+    font-family: cursive;
+    letter-spacing: 0.2vmax;
+    transition: all linear 0.2s;
+    border: 0.1vmax solid transparent;
+}
+.congrats > h1 >a:hover{
+    background-color: white;
+    color: blue;
+    border: 0.1vmax solid blue;
+}
