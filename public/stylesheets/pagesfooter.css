@@ -8,21 +8,26 @@
 .links-footer >h2{
     margin-top: 2vmax;
     font-weight: 700;
+    /* user-select: none; */
 }
 .purple{
     margin-bottom: 0.5vmax;
     margin-top: 0.5vmax;
     font-weight: 100;
+    user-select: none;
     color: rgb(159,32,137);
 }
 .gray{
     margin-top: 1.3vmax;
+    user-select: none;
     color: rgb(29, 28, 28);
 }
 .footer{
     height: 50vh;
     width: 100%;
     padding: 0.5vmax;
+    user-select: none;
+
 }
 .footer-box{
     height: 100%;

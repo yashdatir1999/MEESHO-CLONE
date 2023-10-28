@@ -2118,7 +2118,7 @@ const mailOptions = {
   from: "Meesho Pvt. Ltd.<meesho@gmail.com>",
   to: req.body.custumeremail,
   subject: `Order Confirmation - Meesho Order #${orderID} `,
-  html: `<h1> Dear ${req.body.custumername} </h1>,
+  html: `<h1> Dear ${req.body.custumername} </h1>
 
   We hope this email finds you well. We are delighted to inform you that your order with Meesho has been successfully confirmed, and we are excited to provide you with the details you need to track your order's progress.
   <br><br>
@@ -2131,6 +2131,8 @@ const mailOptions = {
   Order Amount: ₹ ${totalprice}
   <br>
   Tracking ID: ${orderid()}
+  <br>
+  Estimated Delivery Time: 3 - 5 Business Days
   <br>
   Customer Address: ${req.body.custumeraddress}
   <br><br>
@@ -2149,6 +2151,7 @@ const mailOptions = {
   Warm regards,
   <br><br>
   MEESHO
+  <br>
   Online Shopping Site for Fashion, Electronics, Home & More | Meesho
   <br><br>
   Meesho Customer Service Team
