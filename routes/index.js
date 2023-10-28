@@ -2007,7 +2007,7 @@ router.post('/supplirlogin', function(req, res, next) {
   if(userid === req.body.userid && password === req.body.password){
     res.redirect("/productregistration")
   }else{
-    res.send(`<h1> WRONG USER-ID OR PADDWORD </h1>`)
+    res.render("wrongidpassword")
   }
 });
 
@@ -2088,7 +2088,7 @@ router.get('/productdetails/:pro', async function(req, res, next) {
 router.get('/buybtn/:buyid', async function(req, res, next) {
   try {
     var product = await DATABASE.findById(req.params.buyid)
-    totalprice = product.productprice + product.deliverycharges
+    totalprice = parseInt(product.productprice) + parseInt(product.deliverycharges)
     productname = product.productname
     res.render("buypage" , {product , totalprice} )
   } catch (error) {

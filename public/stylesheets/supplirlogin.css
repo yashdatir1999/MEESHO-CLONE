@@ -14,14 +14,18 @@
     flex-direction: column;
     padding: 2.5vmax;
 }
-.supplirlogin >img{
+.supplirlogin > a >img{
     height: 2.2vmax;
+}
+#Meeshoimg{
+    border: none;
 }
 .supplirlogin >form{
     height: 57vh;
     width: 30%;
     padding: 2vmax ;
     background-color: whitesmoke;
+    transform: translateY(-2vmax);
 }
 .supplirlogin >form >h2{
     font-family: sans-serif;
@@ -60,8 +64,8 @@
     font-size: 1.4vmax;
     /* background-color: red; */
     position: absolute;
-    top: 42.9%;
-    right: 38.3%;
+    top: 49.5%;
+    right: 10.3%;
 }
 .supplirlogin >form >button{
     padding: 0.8vmax;

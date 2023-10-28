@@ -94,6 +94,10 @@
     margin-top: 1vmax;
     color: rgba(0, 0, 0, 0.817);
 }
+.productdetails-right >h1 >span{
+    font-size: 1vmax;
+    color: rgba(31, 30, 30, 0.656);
+}
 .productdetails-right >h5{
     font-size: 1.1vmax;
     margin-top: 1.5vmax;

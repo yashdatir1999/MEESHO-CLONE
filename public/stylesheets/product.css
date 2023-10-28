@@ -31,13 +31,13 @@
     height: 67vh;
     width: 23vw;
     background-color: whitesmoke;
-    box-shadow: 0 0 0.5vmax rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.3vmax rgba(0, 0, 0, 0.5);
     border-radius: 0.5vmax;
     padding: 1vmax 2vmax;
     transition: all linear 0.1s;
 }
 .product-box:hover{
-    box-shadow: 0 0 1vmax rgba(0, 0, 0, 0.712);
+    box-shadow: 0 0 0.7vmax rgba(0, 0, 0, 0.712);
 }
 .product-box-img{
     height: 40vh;
