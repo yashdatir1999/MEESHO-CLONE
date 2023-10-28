@@ -18,6 +18,14 @@ html,body{
     height: 80%;
     width: 80%;
 }
+.congrats >h2{
+    position: absolute;
+    right: 7%;
+    bottom: 23%;
+    text-align: center;
+    font-size: 1.2vmax;
+    font-family: sans-serif;
+}
 .congrats >h1{
     position: absolute;
     bottom: 15%;
