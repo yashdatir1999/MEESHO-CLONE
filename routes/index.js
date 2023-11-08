@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 const countrylist = require("country-list")
 const DATABASE = require("../module/usermodel")
+const USER = require("../module/customermodel")
 const nodemailer = require("nodemailer")
 var totalprice 
 var productname
@@ -1991,6 +1992,11 @@ router.get('/Electronics/HomeAppliances', async function(req, res, next) {
 
 router.get('/signup', function(req, res, next) {
   res.render('signup');
+});
+
+
+router.get('/signin', function(req, res, next) {
+  res.render('signin');
 });
 
 router.get('/supplirpage', function(req, res, next) {

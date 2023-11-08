@@ -1,5 +1,5 @@
 <%- include("code/header")%>
-<link rel="stylesheet" href="/stylesheets/signup.css">
+<link rel="stylesheet" href="/stylesheets/signin.css">
 
 <div class="filler"></div>
 <div class="topnav">
@@ -37,47 +37,22 @@
     </div>
 </div>
 
-<div class="signup-box">
+<div class="signin-box">
     <div class="form-area">
         <img src="https://images.meesho.com/images/marketing/1661417516766.webp" alt="">
-        <h2>Register your Account</h2>
-        <form action="/signup" method="post">
-            <input type="text" name="username" placeholder="Enter Username" id=""><br>
-            <input type="number" name="mobile" placeholder="Enter Mobile no." id=""><br>
-            <input type="email" name="email" placeholder="Enter E-mail" id=""><br>
-            <input type="password" name="password" placeholder="Enter Password" id=""><br>
-            <input type="text" name="address" placeholder="Enter Address" id=""><br>
-            <button>Register</button>
-            <h4>Already have an account <a href="/signin">Sign In</a></h4>
+        <h2>Sign In to view your profile</h2>
+        <form action="/signin" method="post">
+            <input type="text" name="userid" placeholder="Enter your user id" id=""><br>
+            <input type="password" name="password" placeholder="Enter your password" id="">
+            <br>
+            <button>Continue</button>
+            <h4>Dont have account <a href="/signup">Sign Up</a></h4>
         </form>
-        
+        <p><span>By continuing, you agree to Meesho’s</span> <br> Terms & Conditions  
+            and  
+            Privacy Policy</p>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="/javascripts/nav.js"></script>
 
