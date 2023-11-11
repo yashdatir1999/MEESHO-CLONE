@@ -259,6 +259,11 @@ html , body{
     flex-direction: column;
     justify-content: space-around;
 }
+.eye{
+    position: absolute;
+    right: 39.5%;
+    top: 85%;
+}
 .form-area >form >input{
     width: 95%;
     padding: 0.7vmax;

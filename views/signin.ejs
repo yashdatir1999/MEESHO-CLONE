@@ -43,7 +43,10 @@
         <h2>Sign In to view your profile</h2>
         <form action="/signin" method="post">
             <input type="text" name="username" placeholder="Enter your user name" id=""><br>
-            <input type="password" name="password" placeholder="Enter your password" id="">
+            <input class="password" type="password" name="password" placeholder="Enter your password" id="">
+            <div class="eye">
+                <i class="ri-eye-off-line"></i>
+            </div>
             <br>
             <button>Continue</button>
             <h6><a href="/forget">Forget Password</a></h6>
@@ -56,5 +59,20 @@
 </div>
 
 <script src="/javascripts/nav.js"></script>
+
+<script>
+var eye = document.querySelector(".eye")
+var password = document.querySelector(".password")
+
+eye.addEventListener("click" , function(){
+    if(password.type == "password"){
+        password.type="input"
+        eye.innerHTML=`<i class="ri-eye-fill"></i>`
+    }else{
+        password.type="password"
+        eye.innerHTML=`<i class="ri-eye-off-fill"></i>`
+    }
+})
+</script>
 
 <%- include("code/footer")%>

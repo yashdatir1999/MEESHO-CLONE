@@ -45,7 +45,11 @@
             <input type="text" name="username" placeholder="Enter Username" id=""><br>
             <input type="number" name="mobile" placeholder="Enter Mobile no." id=""><br>
             <input type="email" name="email" placeholder="Enter E-mail" id=""><br>
-            <input type="password" name="password" placeholder="Enter Password" id=""><br>
+            <input class="password" type="password" name="password" placeholder="Enter Password" id="">
+            <div class="eye">
+                <i class="ri-eye-off-line"></i>
+            </div>
+            <br>
             <input type="text" name="address" placeholder="Enter Address" id=""><br>
             <button>Register</button>
             <h4>Already have an account <a href="/signin">Sign In</a></h4>
@@ -54,31 +58,22 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="/javascripts/nav.js"></script>
 
+<script>
+
+var eye = document.querySelector(".eye")
+var password = document.querySelector(".password")
+
+eye.addEventListener("click" , function(){
+    if(password.type == "password"){
+        password.type="input"
+        eye.innerHTML=`<i class="ri-eye-fill"></i>`
+    }else{
+        password.type="password"
+        eye.innerHTML=`<i class="ri-eye-off-fill"></i>`
+    }
+})
+
+</script>
 <%- include("code/footer")%>
