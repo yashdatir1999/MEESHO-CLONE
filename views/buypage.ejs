@@ -46,10 +46,10 @@
             
             <div class="buypage-contener-left-buttom">
                 <form action="/buyform" method="post">
-                    <input type="text" name="custumername" placeholder="Enter Buyer Name:" id="">
-                    <input type="number" name="custumermob" placeholder="Enter Buyer Mob No: " id="">
-                    <input type="email" name="custumeremail" placeholder="Enter Buyer E-mail:" id="">
-                    <textarea name="custumeraddress" placeholder="Enter Delivery Address " id="" cols="30" rows="10"></textarea>
+                    <input type="text" value="<%= admin.username%>" name="custumername" placeholder="Enter Buyer Name:" id="">
+                    <input type="number" name="custumermob" value="<%= admin.mobile%>" placeholder="Enter Buyer Mob No: " id="">
+                    <input type="email" name="custumeremail" value="<%= admin.email%>" placeholder="Enter Buyer E-mail:" id="">
+                    <textarea name="custumeraddress" placeholder="Enter Delivery Address " id="" cols="30" rows="10"><%= admin.address%></textarea>
                     <button>ORDER NOW</button>
                 </form>
             </div>

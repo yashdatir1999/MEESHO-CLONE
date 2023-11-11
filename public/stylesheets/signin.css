@@ -40,7 +40,6 @@ html , body{
 .topnav >input{
     height: 8vh;
     width: 29vw;
-    outline: none;
     border-radius: 0.3vmax;
     border: 2px solid rgba(146, 139, 163, 0.846);
     padding-left: 3.5vmax;
@@ -243,8 +242,16 @@ html , body{
     font-size: 1.4vmax;
     font-family: sans-serif;
 }
+.form-area >form >h6 >a{
+    text-decoration: none;
+    user-select: none;
+    position: absolute;
+    left: 38%;
+    bottom: -3%;
+    font-family: sans-serif;
+}
 .form-area >form{
-    height: 20vh;
+    height: 37vh;
     padding: 0 3vmax;
     /* background-color: lightcyan; */
     display: flex;
@@ -256,6 +263,7 @@ html , body{
     width: 95%;
     padding: 0.7vmax;
     background-color: transparent;
+    outline: none;
     border: none;
     border-bottom: 0.1vmax solid black;
     transition: all linear 0.2s;
@@ -270,6 +278,7 @@ html , body{
     color: white;
     border: none;
     border-radius: 0.4vmax;
+    margin-bottom: 2vmax;
     background-color: rgb(159,32,137);
 }
 .form-area >form >h4{
@@ -280,7 +289,7 @@ html , body{
 .form-area >p{
     color: rgb(159,32,137);
     font-size: 0.9vmax;
-    margin-top: 15vmax;
+    margin-top: 11vmax;
     text-align: center;
     font-family: sans-serif;
 }

@@ -150,10 +150,19 @@ html,body{
     font-weight: 100;
     color: rgb(32, 31, 31);
 }
-.profile-login >.signup{
+.profile-login >h6 >span{
+    padding-left: 7vmax;
+}
+.profile-login >.signin{
     background-color: rgb(146, 25, 126);
     margin-top: 2vmax;
     padding: 1vmax 5.7vmax;
+    color: white;
+}
+.profile-login >.signout{
+    background-color: rgb(146, 25, 126);
+    margin-top: 2vmax;
+    padding: 1vmax 5.6vmax;
     color: white;
 }
 .order{

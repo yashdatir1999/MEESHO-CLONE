@@ -1,0 +1,83 @@
+<%- include("code/header")%>
+<link rel="stylesheet" href="/stylesheets/updateaccount.css">
+
+<div class="filler"></div>
+<div class="topnav">
+    <h2><a href="/">meesho</a></h2>
+    <i class="ri-search-line"></i>
+    <input placeholder="Try Saree,Kurti or Serch by Product Code " type="text" name="" id="">
+    <div class="app">
+        <i class="ri-smartphone-line"></i>
+        <h3>Download App</h3>
+        <div class="DownloadApp">
+            <h4>Download From</h4>
+            <img src="https://images.meesho.com/images/pow/playstore-icon-big.png" alt="">
+            <img src="https://images.meesho.com/images/pow/appstore-icon-big.png" alt="">
+        </div>
+    </div>
+    <hr>
+    <h3><a href="/supplirpage">Become a Supplire</a></h3>
+    <hr>
+    <h3>Newsroom</h3>
+    <hr>
+    <div class="profile">
+        <i class="ri-user-line"></i>
+        <h3>Profile</h3>
+        <div class="profile-login">
+            <h2>Hello User</h2>
+            <h6>To access your Meesho account</h6>
+            <a class="signin" href="/signin">Sign in</a>
+            <hr>
+            <a class="order" href="/signin"><i class="ri-shopping-bag-line"></i> <span>My Orders</span></a>
+        </div>
+    </div>
+    <div class="cart">
+        <i class="ri-shopping-cart-2-line"></i>
+        <h3>Cart</h3>
+    </div>
+</div>
+
+<div class="signup-box">
+    <div class="form-area">
+        <img src="https://images.meesho.com/images/marketing/1661417516766.webp" alt="">
+        <h2>Update your Account</h2>
+        <form action="/updateaccount/<%= admin._id%>" method="post">
+            <input type="text" value="<%= admin.username%>" name="username" placeholder="Enter Username" id=""><br>
+            <input type="number" value="<%= admin.mobile%>" name="mobile" placeholder="Enter Mobile no." id=""><br>
+            <input type="email" name="email" value="<%= admin.email%>" placeholder="Enter E-mail" id=""><br>
+            <input type="text" name="address" value="<%= admin.address%>" placeholder="Enter Address" id=""><br>
+            <button>Update</button>
+            <a href="/updatepassword">Update Password</a>
+        </form>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/javascripts/nav.js"></script>
+
+<%- include("code/footer")%>

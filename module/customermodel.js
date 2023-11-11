@@ -1,5 +1,7 @@
 const mongoose = require("mongoose")
 
+const plm = require("passport-local-mongoose")
+
 const userdata = new mongoose.Schema({
     username: {
         type: String
@@ -22,5 +24,7 @@ const userdata = new mongoose.Schema({
     }
 
 })
+
+userdata.plugin(plm)
 
 module.exports = mongoose.model("userdetail" , userdata)
