@@ -117,7 +117,7 @@ html,body{
     top: 59%;
     right: 2%;
     position: absolute;
-    height: 30vh;
+    /* height: 30vh; */
     z-index: 10;
     width: 18vw;
     border-radius: 0.5vmax;
