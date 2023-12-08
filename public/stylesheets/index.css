@@ -67,6 +67,7 @@ hr{
     margin-left: 4vmax;
     gap: 1vmax;
     transition: all linear 0.2s;
+    font-family: sans-serif;
 }
 .appbtn:active{
     scale: 0.9;

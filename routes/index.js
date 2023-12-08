@@ -29,6 +29,7 @@ router.get('/', async function(req, res, next) {
 
   try {
     const product = await DATABASE.find()
+    product.reverse()
     product.splice(50)
     res.render('index', { product , admin: req.user});
       

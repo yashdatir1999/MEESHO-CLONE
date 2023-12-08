@@ -40,14 +40,14 @@
     border-radius: 0.3vmax;
     color: white;
     border: 0.1vmax solid transparent;
-    background-color:  rgb(60,41,183);
+    background-color:  rgb(244,56,153);
     transition: all linear 0.2s;
     font-family: sans-serif;
 }
 .modify:hover{
-    border: 0.1vmax solid rgb(60,41,183);
+    border: 0.1vmax solid rgb(244,56,153);
     background-color: transparent;
-    color: rgb(60,41,183);
+    color: rgb(244,56,153);
 }
 form{
     height: 80vh;
