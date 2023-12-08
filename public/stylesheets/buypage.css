@@ -130,8 +130,11 @@ hr{
 .buy-product-details-right >h3{
     font-family: sans-serif;
     width: fit-content;
+    height: 3.5vh;
+    overflow: hidden;
     color: rgba(57, 54, 54, 0.68);
     font-size: 1.2vmax;
+    /* background-color: pink; */
     margin-bottom: 0.5vmax;
 }
 .sold-delivery{
