@@ -7,6 +7,8 @@ const passport = require("passport")
 const LocalStrategy = require("passport-local");
 passport.use(new LocalStrategy(USER.authenticate()));
 const nodemailer = require("nodemailer")
+const idpass = require("../idpasswordhide")
+
 var totalprice 
 var productname
 
@@ -2102,8 +2104,8 @@ const transport = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
   auth: {
-    user: "yashdatir1999@gmail.com",
-    pass: "ndrh kqpa pxvt sogm",
+    user: idpass.gmail,
+    pass: idpass.password,
 },
 });
 
@@ -2349,8 +2351,8 @@ const transport = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
   auth: {
-      user: "yashdatir1999@gmail.com",
-      pass: "ndrh kqpa pxvt sogm",
+    user: idpass.gmail,
+    pass: idpass.password,
   },
 });
 
